@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearlayout_style"
+    android:paddingTop="@dimen/padding_top58"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hericxon.reprohealth.knowYoureBody.PsychologicalDevelopment"
+    tools:showIn="@layout/activity_psychological_development">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/linearlayout_style">
+
+            <ImageView
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview"/>
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_details"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dim60"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hericxon.reprohealth.knowYoureBody.Fertility"
+    tools:showIn="@layout/activity_fertility">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            style="@style/linearlayout_style"
+            android:layout_below="@+id/imageView_gender_vs_sex"
+            android:layout_marginTop="-6dp">
+            <ImageView
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview"/>
+
+            <TextView
+                android:id="@+id/textView_whats_fertility"
+                style="@style/TextView"
+                android:text="@string/whats_fertility_details" />
+
+            <TextView
+                android:id="@+id/textView_causes_of_pregnancy"
+                style="@style/TextView"
+                android:text="@string/auses_of_pregnancy_details" />
+            <TextView
+                android:id="@+id/textView_avoiding_pregnancy"
+                style="@style/TextView"
+                android:text="@string/avoiding_pregnancy_details" />
+            <TextView
+                android:id="@+id/textView_when_can_afemale_get_pregnant"
+                style="@style/TextView"
+                android:text="@string/when_can_a_female_get_pregnant_details" />
+            <TextView
+                android:id="@+id/textView_time_taken_to_be_pregnant"
+                style="@style/TextView"
+                android:text="@string/time_taken_to_be_pregnant_details" />
+            <TextView
+                android:id="@+id/textView_fertilization"
+                style="@style/TextView"
+                android:text="@string/fertilization_details" />
+            <TextView
+                android:id="@+id/textView_implantation"
+                style="@style/TextView"
+                android:text="@string/implantation_details" />
+            <TextView
+                android:id="@+id/textView_determine_pregnancy"
+                style="@style/TextView"
+                android:text="@string/determine_pregnancy_details" />
+            <TextView
+                android:id="@+id/textView_pregnancy_myths"
+                style="@style/TextView"
+                android:text="@string/pregnancy_myths_details" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user_profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_body"
+            android:icon="@drawable/ic_your_body"
+            android:title="@string/body" />
+        <item
+            android:id="@+id/nav_relationship"
+            android:icon="@drawable/ic_relationship"
+            android:title="@string/relationships" />
+        <item
+            android:id="@+id/nav_familyplanning"
+            android:icon="@drawable/ic_family_planning"
+            android:title="@string/family_planning" />
+        <item
+            android:id="@+id/nav_HIV_STDs"
+            android:icon="@drawable/ic_health_center"
+            android:title="@string/diseases" />
+
+        <item
+            android:id="@+id/nav_reproductive_health"
+            android:icon="@drawable/ic_hiv_aids"
+            android:title="@string/centers" />
+        <item
+            android:id="@+id/nav_myths"
+            android:icon="@drawable/ic_facts"
+            android:title="@string/stories" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_explore_about"
+            android:title="@string/about" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

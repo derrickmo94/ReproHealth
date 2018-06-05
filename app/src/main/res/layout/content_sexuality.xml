@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dim60"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hericxon.reprohealth.knowYoureBody.Sexuality"
+    tools:showIn="@layout/activity_sexuality">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            style="@style/linearlayout_style"
+            android:layout_below="@+id/imageView_gender_vs_sex"
+            android:layout_marginTop="-6dp">
+            <ImageView
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview"/>
+
+            <TextView
+                android:id="@+id/textView_what_sex"
+                style="@style/TextView"
+                android:text="@string/what_is_sex_details" />
+
+            <TextView
+                android:id="@+id/textView_sexuality"
+                style="@style/TextView"
+                android:text="@string/sexuality_details" />
+            <TextView
+                android:id="@+id/textView_delaying_sex"
+                style="@style/TextView"
+                android:text="@string/delaying_sex_details" />
+            <TextView
+                android:id="@+id/textView_sex_wrong_reasons"
+                style="@style/TextView"
+                android:text="@string/sex_wrong_reasons_details" />
+            <TextView
+                android:id="@+id/textView_sexual_intercourse"
+                style="@style/TextView"
+                android:text="@string/sexual_intercourse_details" />
+            <TextView
+                android:id="@+id/textView_masturbation"
+                style="@style/TextView"
+                android:text="@string/masturbation_details" />
+            <TextView
+                android:id="@+id/textView_sexual_orientation"
+                style="@style/TextView"
+                android:text="@string/sexual_orientation_details" />
+            <TextView
+                android:id="@+id/textView_consent"
+                style="@style/TextView"
+                android:text="@string/consent_details" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

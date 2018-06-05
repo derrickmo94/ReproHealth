@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top58"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hericxon.reprohealth.Relationships.RelationshipActivity"
+    tools:showIn="@layout/activity_relationship">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/body_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+        style="@style/linearlayout_style">
+
+           <ImageView
+               style="@style/imageview_style"
+               android:contentDescription="@string/imageview"/>
+
+            <Button
+                android:id="@+id/button_details"
+                style="@style/button_style"
+                android:text="@string/details_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/button_keys"
+                style="@style/button_style"
+                android:text="@string/key_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/button_parents"
+                style="@style/button_style"
+                android:text="@string/parents_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/button_friends"
+                style="@style/button_style"
+                android:text="@string/friend_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/button_special"
+                style="@style/button_style"
+                android:text="@string/special_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/button_signs"
+                style="@style/button_style"
+                android:text="@string/signs_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
