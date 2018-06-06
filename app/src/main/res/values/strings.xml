@@ -975,14 +975,151 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="female_hormones_btn">Female hormones</string>
-    <string name="psyco_identity_details">IDENTITY</string>
-    <string name="psyco_sadness_and_depression_details">SADNESS AND DEPRESSION</string>
-    <string name="psyco_sucidal_thoughts_details">SUCIDAL THOUGHTS</string>
-    <string name="psyco_substance_abuse_details">SUBSTANCE ABUSE</string>
-    <string name="psyco_eating_problems_details">EATING PROBLEMS</string>
-    <string name="psyco_anger_and_aggression_details">ANGER AND AGGRESSION</string>
-    <string name="psyco_self_esteem_details">ANGER AND SELF ESTEEM</string>
-    <string name="psyco_body_image_details">BODY IMAGE</string>
+    <string name="psyco_identity_details">
+        <b><u>IDENTITY</u></b>\n
+        This is the time you start exploring your identity. About who you are 
+        and what you want to become in life.\n\n
+        You start developing your own beliefs based on what your parents, your
+        friends and the society around think and do.\n\n
+        Sometimes, you are inspired and influenced by your surrounding and 
+        sometimes you feel you do not fit in.\n\n
+        Sometimes, you may also begin to feel strongly about a religion and 
+        about your ethnicity. Sometimes you may not.\n\n
+        Don't worry, you can be very confused right now. You do not have to
+        rush to take any serious decisions about your beliefs. Beliefs keep
+        changing even when you become an adult.\n\n
+        You will have clearer idea in few years about how you would like to
+        identify yourself in different areas of your life.
+    </string>
+    
+    <string name="psyco_sadness_and_depression_details">
+        <b><u>SADNESS AND DEPRESSION</u></b>\n
+        It is natural to feel sad many times.You might feel like you don't
+        fit in and nobody understands you.\n\n
+        Sometimes, you might also feel depressed. If you find it is too 
+        difficult for you, you should always talk to someone.\n\n
+        It is better to talk to your parents and teachers or other elders
+        you feel comfortable with. It is always better to focus your energy
+        in physical activities like sports, art and music, that would make
+        you feel better. But even after you try your best, if you still 
+        feel\n\n
+        -too sad\n\n
+        -too many thoughts always bothering you\n\n
+        -always feel like crying constantly\n\n
+        -cannot sleep\n\n
+        -don't feel like eating or eat too much\n
+        You needto ask for help from your parents, elders and even 
+        professionals who can help you deal with difficult times.
+    </string>
+    
+    <string name="psyco_sucidal_thoughts_details">
+        <b><u>SUCIDAL THOUGHTS</u></b>\n
+        Everyone of us at any age, at any point of life can feel very sad and 
+        depressed to the extent you start hating your life.\n
+        Life is difficult for all, but there are also millions of opportunities and
+        hopes.\n
+        What bothers you right now will stop bothering you when you are emotionally
+        strong and grow up a bit more. In few years you might even feel like laughing 
+        at yourself.\n
+        If you have constant feeling of harming yourself or even kill yourself:\n\n
+        -Do not rush\n\n
+        -Take a deep breath and ask for help immediately from your elders\n\n
+        -Do not hurt yourself\n\n
+        You are too precious to be harmed by yourself or by anyone else\n\n
+        Always remember you are special no matter whatt happened to you or what
+        other people think of you.\n\n
+        There are many professional health centers who can help you feel better.
+        They will not judge you. They understand what you are going through.
+        There are many adolescents like you who feel sad and anxious everyday.
+        You are not the only one. Talk to your parent or elders.
+    </string>
+    
+    <string name="psyco_substance_abuse_details">
+        <b><u>SUBSTANCE ABUSE</u></b>\n
+        Adolescence is a time when you are at high risk of indulging in smoking,
+        drinking alcohol and taking drugs.\n\n
+        But once you take these steps, it is difficult for you to give up these
+        habits. Even worse, you can easily get addicted. It can get you into wrong
+        company and you may have trouble with the people you love.\n\n
+        But you have a bright future ahead of you and you should not ruin it.\n\n
+        So control yourself. Learn to say NO to substance abuse. Instead focus your 
+        energy on education,games and sports, art and music or whatever makes you
+        feel really good inside.\n\n
+        You can be happy and have fun even without these substances.\n\n
+        In fact, you will be much happier without them.
+    </string>
+    
+    <string name="psyco_eating_problems_details">
+        <b><u>EATING PROBLEMS</u></b>\n
+        It is common for many adolescents both boys and girls to have eating 
+        problems.\n\n
+        As your body and mind is growing, it is important for you to have proper
+        nutrition.\n\n
+        If you are conscious of your body image and eat too little, it can lead
+        to malnutrition and imbalance in your hormones affecting your normal
+        growth.\n\n
+        If you think you are not growing enough and eat too much, it will not 
+        help either, because it can lead to problems like obesity and can also 
+        affect your hormones and your proper growth.\n\n
+        So try to have a balance diet rich in all the nutrients.\n\n
+        Too much or too little food is not healthy for your growth.\n\n
+        You should consult a professional nutritionist if you are having
+        eating problems.
+    </string>
+    
+    <string name="psyco_anger_and_aggression_details">
+        <b><u>ANGER AND AGGRESSION</u></b>\n
+        At your age it is normal to get angry more often with your parents 
+        and elders.\n\n
+        Anger is a natural emotion that we all have.\n\n
+        But it is more important to learn to control your anger.\n\n
+        It is not cool to let your anger control you.\n\n
+        It is not cool to destroy things around you and hurt people.\n\n
+        When you feel angry you can instead divert your anger and 
+        frustration into something productive like running, playing sports,
+        playing music or painting or writing.\n\n
+        This way you can channel all your negative energy into something
+        more creative that you can be proud of.\n\n
+        Many of us often laugh at the things that used to make us angry
+        when we were younger. So don't worry it is a matter of time. Do
+        not let aggression take over all the good things you have within 
+        you.
+    </string>
+    
+    <string name="psyco_self_esteem_details">
+        <b><u>ANGER AND SELF ESTEEM</u></b>\n
+        Once you enter puberty and the days onwards, you notice sudden changes
+        in your body and emotions. We all become selfconscious.We are concerned
+        about what others think of us.\n\n
+        In this process some may become extremely shy, some may loose their
+        confidence, whereas some may try to gain too much attention from 
+        others.\n\n
+        But the best solution is to stay cool.You do not need to worry
+        about what your friends think of you because they are going through the
+        similar stage as awkward as it is for you.\n\n
+        You also do not need to worry what your elders think of you, bacause they
+        too have passed through your stage.At your age they too have gone through
+        their own awkwardness.\n\n
+        So take it easy,relax and understand that you are still growing.Have 
+        confidence in yourself because no matter what others think of you,
+        you are special.You will turn out just fine as a wonderful adult.
+     
+    </string>
+    
+    <string name="psyco_body_image_details">
+        <b><u>BODY IMAGE</u></b>\n
+        As we enter puberty our body changes rapidly.We all want to  look attractive
+        and are often influenced by the images of models and actors you watch in 
+        movies and magazines etc.On the other hand, you may feel that you do not
+        look like them.\n\n
+        Relax, we all have been through this stage.It is normal.Even the attractive
+        adults you admire could have gone through same problems when they were
+        younger.\n\n
+        Remember, it is not the shape of your body,how fat you are or how thin
+        you are that makes you attractive.Instead, it is the personality and the 
+        confidence you have in yourself that will make you attractive.
+    </string>
+    
 
 
 </resources>
