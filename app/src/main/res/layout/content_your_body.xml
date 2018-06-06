@@ -45,12 +45,12 @@
             android:text="@string/know_youre_body"
             android:textSize="@dimen/dim20"
             android:textAlignment="center"
-            android:background="@color/colorlightbr" />
+            android:background="@color/colorPrimary" />
         <RelativeLayout
             android:id="@+id/yourbody_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorlight2br">
+            android:background="@color/colorPrimaryDark2">
             <ImageButton
                 android:id="@+id/imagebutton_male"
                 android:layout_width="wrap_content"

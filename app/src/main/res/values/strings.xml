@@ -7,7 +7,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-
     <string name="home">Home</string>
     <string name="profile">User profile</string>
     <string name="body">Know your body</string>
@@ -24,93 +23,93 @@
     <string name="about">About</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
-        "Material is the metaphor.\n\n"
+       Material is the metaphor.\n\n
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
+       A material metaphor is the unifying theory of a rationalized space and a system of motion.
+       The material is grounded in tactile reality, inspired by the study of paper and ink, yet
+       technologically advanced and open to imagination and magic.\n
+       Surfaces and edges of the material provide visual cues that are grounded in reality. The
+       use of familiar tactile attributes helps users quickly understand affordances. Yet the
+       flexibility of the material creates new affordances that supercede those in the physical
+       world, without breaking the rules of physics.\n
+       The fundamentals of light, surface, and movement are key to conveying how objects move,
+       interact, and exist in space and in relation to each other. Realistic lighting shows
+       seams, divides space, and indicates moving parts.\n\n
 
-        "Bold, graphic, intentional.\n\n"
+       Bold, graphic, intentional.\n\n
 
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
+       The foundational elements of print based design typography, grids, space, scale, color,
+       and use of imagery guide visual treatments. These elements do far more than please the
+       eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge
+       imagery, large scale typography, and intentional white space create a bold and graphic
+       interface that immerse the user in the experience.\n
+       An emphasis on user actions makes core functionality immediately apparent and provides
+       waypoints for the user.\n\n
 
-        "Motion provides meaning.\n\n"
+       Motion provides meaning.\n\n
 
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+       Motion respects and reinforces the user as the prime mover. Primary user actions are
+       inflection points that initiate motion, transforming the whole design.\n
+       All action takes place in a single environment. Objects are presented to the user without
+       breaking the continuity of experience even as they transform and reorganize.\n
+       Motion is meaningful and appropriate, serving to focus attention and maintain continuity.
+       Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n
 
-        "3D world.\n\n"
+       3D world.\n\n
 
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
+       The material environment is a 3D space, which means all objects have x, y, and z
+       dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the
+       positive z-axis extending towards the viewer. Every sheet of material occupies a single
+       position along the z-axis and has a standard 1dp thickness.\n
+       On the web, the z-axis is used for layering and not for perspective. The 3D world is
+       emulated by manipulating the y-axis.\n\n
 
-        "Light and shadow.\n\n"
+       Light and shadow.\n\n
 
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+       Within the material environment, virtual lights illuminate the scene. Key lights create
+       directional shadows, while ambient light creates soft shadows from all angles.\n
+       Shadows in the material environment are cast by these two light sources. In Android
+       development, shadows occur when light sources are blocked by sheets of material at
+       various positions along the z-axis. On the web, shadows are depicted by manipulating the
+       y-axis only. The following example shows the card with a height of 6dp.\n\n
 
-        "Resting elevation.\n\n"
+       Resting elevation.\n\n
 
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
+       All material objects, regardless of size, have a resting elevation, or default elevation
+       that does not change. If an object changes elevation, it should return to its resting
+       elevation as soon as possible.\n\n
 
-        "Component elevations.\n\n"
+       Component elevations.\n\n
 
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+       The resting elevation for a component type is consistent across apps (e.g., FAB elevation
+       does not vary from 6dp in one app to 16dp in another app).\n
+       Components may have different resting elevations across platforms, depending on the depth
+       of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n
 
-        "Responsive elevation and dynamic elevation offsets.\n\n"
+       Responsive elevation and dynamic elevation offsets.\n\n
 
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
+       Some component types have responsive elevation, meaning they change elevation in response
+       to user input (e.g., normal, focused, and pressed) or system events. These elevation
+       changes are consistently implemented using dynamic elevation offsets.\n
+       Dynamic elevation offsets are the goal elevation that a component moves towards, relative
+       to the component’s resting state. They ensure that elevation changes are consistent
+       across actions and component types. For example, all components that lift on press have
+       the same elevation change relative to their resting elevation.\n
+       Once the input event is completed or cancelled, the component will return to its resting
+       elevation.\n\n
 
-        "Avoiding elevation interference.\n\n"
+       Avoiding elevation interference.\n\n
 
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
+       Components with responsive elevations may encounter other components as they move between
+       their resting elevations and dynamic elevation offsets. Because material cannot pass
+       through other material, components avoid interfering with one another any number of ways,
+       whether on a per component basis or using the entire app layout.\n
+       On a component level, components can move or be removed before they cause interference.
+       For example, a floating action button (FAB) can disappear or move off screen before a
+       user picks up a card, or it can move if a snackbar appears.\n
+       On the layout level, design your app layout to minimize opportunities for interference.
+       For example, position the FAB to one side of stream of a cards so the FAB won’t interfere
+       when a user tries to pick up one of cards.\n\n
     </string>
 
     <string name="title_activity_user">User Profile</string>
@@ -146,109 +145,109 @@
     <string name="male_hormones_btn">What are male hormones</string>
 
     <string name="sex_details">
-        "<b><u>Sex</u></b>\n"
-        "The term sex refers to biological characteristics, namely chromosomes, internal"
-        "and external sex organs, and the hormonal activities within the body.\n"
-        "Essentially, when we use the term sex, what we are really commenting on is"
-        "“male” vs. “female”, scientifically speaking.\n
-        "The sex of an individual is based on genetics, making it much more difficult to change.\n"
-        "For those who need a quick recap on human genetics, men and women both possess "
-        "46 chromosomes, as well as two sex chromosomes. Women have two X chromosomes, whereas"
-        "men possess 1 X chromosome and 1 Y chromosome.\n"
-        "It is this Y chromosome in men that causes the testes to form"
-        "(as the Y chromosome is dominant). This difference in chromosomes also causes the"
-        "variation in hormones that are found within the body.\n"
-        "Women, for example, have much higher levels of estrogen and progesterone, which"
-        "stimulate the body to develop primary and secondary sex characteristics"
-        "(breasts, menstruation, etc.).\n"
-        "Men, on the other hand, have much higher levels of testosterone than women. These"
-        "genetically controlled factors result in the physiological and biological"
-        "differences between the sexes."
+       <b><u>Sex</u></b>\n
+       The term sex refers to biological characteristics, namely chromosomes, internal
+       and external sex organs, and the hormonal activities within the body.\n
+       Essentially, when we use the term sex, what we are really commenting on is
+       “male” vs. “female”, scientifically speaking.\n
+       The sex of an individual is based on genetics, making it much more difficult to change.\n
+       For those who need a quick recap on human genetics, men and women both possess
+       46 chromosomes, as well as two sex chromosomes. Women have two X chromosomes, whereas
+       men possess 1 X chromosome and 1 Y chromosome.\n
+       It is this Y chromosome in men that causes the testes to form
+       (as the Y chromosome is dominant). This difference in chromosomes also causes the
+       variation in hormones that are found within the body.\n
+       Women, for example, have much higher levels of estrogen and progesterone, which
+       stimulate the body to develop primary and secondary sex characteristics
+       (breasts, menstruation, etc.).\n
+       Men, on the other hand, have much higher levels of testosterone than women. These
+       genetically controlled factors result in the physiological and biological
+       differences between the sexes.
     </string>
 
     <string name="gender_details">
-        "<b><u>Gender</u></b>\n"
-        "Gender describes the characteristics that a society or culture delineates as masculine"
-        "or feminine. It is the role or differentiation that is created by the society.\n\n"
-        "Unlike “sex”, gender does not have a basis in science, although it is affected by the "
-        "biological and physiological characteristics we display as “males” and “females”.\n."
-        "Instead, gender is based on the societal constructions and belief systems put in place"
-        "that deal with masculinity and femininity. The gender identity that most people adhere to"
-        "is usually unconscious or forced upon us at an early age.\n"
-        "We see the concepts of gender in the colors assigned to children"
-        "(blue for boys, pink for girls), the common length of our hair (men-short, women-long),"
-        "the toys we play with, the jobs we aspire to, and the behaviors and interests we"
-        "are “supposed” to embrace."
+       <b><u>Gender</u></b>\n
+       Gender describes the characteristics that a society or culture delineates as masculine
+       or feminine. It is the role or differentiation that is created by the society.\n\n
+       Unlike “sex”, gender does not have a basis in science, although it is affected by the
+       biological and physiological characteristics we display as “males” and “females”.\n.
+       Instead, gender is based on the societal constructions and belief systems put in place
+       that deal with masculinity and femininity. The gender identity that most people adhere to
+       is usually unconscious or forced upon us at an early age.\n
+       We see the concepts of gender in the colors assigned to children
+       (blue for boys, pink for girls), the common length of our hair (men-short, women-long),
+       the toys we play with, the jobs we aspire to, and the behaviors and interests we
+       are “supposed” to embrace.
     </string>
 
     <string name="gender_identity_details">
-        "<b><u>Gender Identity</u></b>\n"
-        "It is more about how do you identify yourself irrespective of your sexual organs.\n"
-        "- If you have male sexual organs and you feel like a male, then your gender is Male\n"
-        "- If you have female sexual organs and you feel like a female, then your gender is Female.\n"
-        "- Sometimes,you may not identify yourself very clearly as one with a male or female gender"
-        "or sometimes you could identify yourself as boy.\n"
-        "Gender identity is different from sexual orientation"
+       <b><u>Gender Identity</u></b>\n
+       It is more about how do you identify yourself irrespective of your sexual organs.\n
+       - If you have male sexual organs and you feel like a male, then your gender is Male\n
+       - If you have female sexual organs and you feel like a female, then your gender is Female.\n
+       - Sometimes,you may not identify yourself very clearly as one with a male or female gender
+       or sometimes you could identify yourself as boy.\n
+       Gender identity is different from sexual orientation
     </string>
 
     <string name="puberty_details">
-        "<b><u>Puberty</u></b>\n"
-        "Puberty is a stage of transition from childhood to adulthood. All of us grow through this"
-        "difficult stage with changes in our body and mind.\n"
-        "It begins at different ages (from 12 years) depending on different people thus for some it"
-        "starts early and others late. Common changes boys can expect include;\n"
-        "•	Enlargement of testes and the scrotum\n"
-        "•	Growth of pubic hair\n"
-        "•	Enlargement of the penis\n"
-        "•	Ejaculation. During sexual stimulation following a sexual act, the nerves around the"
-            "penis send signals to the surrounding organs and a seminal fluid is released through"
-            "the urethra.\n"
-        "•	Wet dreams. This is common among boys in puberty, they tend to wake up when the beds"
-            "are wet. A boy can have a dream about sex and ejaculates.\n"
-        "•	Change in voice. The voice deepens."
+       <b><u>Puberty</u></b>\n
+       Puberty is a stage of transition from childhood to adulthood. All of us grow through this
+       difficult stage with changes in our body and mind.\n
+       It begins at different ages (from 12 years) depending on different people thus for some it
+       starts early and others late. Common changes boys can expect include;\n
+       •	Enlargement of testes and the scrotum\n
+       •	Growth of pubic hair\n
+       •	Enlargement of the penis\n
+       •	Ejaculation. During sexual stimulation following a sexual act, the nerves around the
+           penis send signals to the surrounding organs and a seminal fluid is released through
+           the urethra.\n
+       •	Wet dreams. This is common among boys in puberty, they tend to wake up when the beds
+           are wet. A boy can have a dream about sex and ejaculates.\n
+       •	Change in voice. The voice deepens.
     </string>
 
     <string name="female_organs_btn">Female reproductive organs</string>
 
     <string name="female_hormones_details">
-        "<b><u>FEMALE HORMONES</u></b>\n"
-        "Hormones are the chemical substance that are released into the body by certain glands.The"
-        "brain mainly controls their functione.\n"
-        "They influence the behaviour, moods, and body changes.\n\n"
-        "There are many hormones inour body.Some hormones are specifically responsible for female"
-        "characteristics."
+       <b><u>FEMALE HORMONES</u></b>\n
+       Hormones are the chemical substance that are released into the body by certain glands.The
+       brain mainly controls their functione.\n
+       They influence the behaviour, moods, and body changes.\n\n
+       There are many hormones inour body.Some hormones are specifically responsible for female
+       characteristics.
     </string>
 
     <string name="female_hormone_estrogen_details">
-        "<b><u>ESTROGEN</u></b>\n"
-        "it is a hormone responsible for female characteristics.\n\n"
-        "In females who are not pregnant, estrogen is mainlt released from the ovaries.\n"
-        "It also controlls ovulation. The level of estrogen decreases during menstruation and"
-        "increases during ovulation.\n\n"
-        "In pregnant women, a large a mount of estrogen is also secreted from by the placenta inside"
-        "the uterus.\n\n"
-        "<i>Some effects of estrogen</i>\n"
-        "<b>• Increase in size of sexual organs</b>\n"
-        "During childhood, estrgen is secreted in small amounts, but the level increases in puberty.\n"
-        "This causes all the female sex organs such as the uterus, ovary, fallopian tubes and"
-        "external genitalia such as the vulva and vargina to grow in their sizes\n\n"
+       <b><u>ESTROGEN</u></b>\n
+       it is a hormone responsible for female characteristics.\n\n
+       In females who are not pregnant, estrogen is mainlt released from the ovaries.\n
+       It also controls ovulation. The level of estrogen decreases during menstruation and
+       increases during ovulation.\n\n
+       In pregnant women, a large a mount of estrogen is also secreted from by the placenta inside
+       the uterus.\n\n
+       <i>Some effects of estrogen</i>\n
+       <b>• Increase in size of sexual organs</b>\n
+       During childhood, estrgen is secreted in small amounts, but the level increases in puberty.\n
+       This causes all the female sex organs such as the uterus, ovary, fallopian tubes and
+       external genitalia such as the vulva and vargina to grow in their sizes\n\n
 
-        "<b>• Enlargement of breasts</b>\n"
-        "Before puberty, both male and female breasts are smilar. But it is due to more production"
-        "of estrogen in a female body, the breasts start growing in its size.\n\n"
+       <b>• Enlargement of breasts</b>\n
+       Before puberty, both male and female breasts are smilar. But it is due to more production
+       of estrogen in a female body, the breasts start growing in its size.\n\n
 
-        "<b>• Softness of the skin</b>\n"
-        "Estrogen is also responsible for the soft and smooth skin in a female"
+       <b>• Softness of the skin</b>\n
+       Estrogen is also responsible for the soft and smooth skin in a female
     </string>
 
     <string name="female_hormone_progestrone_details">
-        "<b><u>PROGESTRONE</u></b>\n"
-        "In females who are not pregnant, this hormone is only secreted after the ovulation by a "
-        "structure medically called <i><b>corpus luteum</b></i> in the ovaries\n\n"
-        "In women who are pregnant, large amount of progestrone is secreted by the placenta in the"
-        "uterus\n\n"
+       <b><u>PROGESTRONE</u></b>\n
+       In females who are not pregnant, this hormone is only secreted after the ovulation by a
+       structure medically called <i><b>corpus luteum</b></i> in the ovaries\n\n
+       In women who are pregnant, large amount of progestrone is secreted by the placenta in the
+       uterus\n\n
 
-        "<i>Effects of progestrone</i>\n"
+       <i>Effects of progestrone</i>\n
         <b>• Changes inside uterus</b>\n
         progestrone helps to prepare the uterus for pregnancy after ovulation. It helps in sercretions
         and creating a layer inside the uterus for implantation\n\n
@@ -283,213 +282,223 @@
     <string name="psychological_btn">Psychological development</string>
 
     <string name="adolesence_details">
-        "<b>Adolescence in females</b>\n"
-        "The teenage years are also called adolescence. During this time, the teenager will see"
-        "the greatest amount of growth in height and weight.\n"
-        "Adolescence is a time for growth spurts and puberty changes. An adolescent may grow"
-        "several inches in several months followed by a period of very slow growth,"
-        "then have another growth spurt.\n\n"
-        "Changes with puberty may occur gradually or several signs may become"
-        "visible at the same time.\n"
-        "There is a great amount of variation in the rate of changes that may occur. Some"
-        "adolescents may experience these signs of maturity sooner or later than others.\n"
-        "It is important to remember that these changes happen at different times for "
-        "everyone. Being smaller or bigger than other girls is normal as each child experiences"
-        "puberty at her own time."
+       <b>Adolescence in females</b>\n
+       The teenage years are also called adolescence. During this time, the teenager will see
+       the greatest amount of growth in height and weight.\n
+       Adolescence is a time for growth spurts and puberty changes. An adolescent may grow
+       several inches in several months followed by a period of very slow growth,
+       then have another growth spurt.\n\n
+       Changes with puberty may occur gradually or several signs may become
+       visible at the same time.\n
+       There is a great amount of variation in the rate of changes that may occur. Some
+       adolescents may experience these signs of maturity sooner or later than others.\n
+       It is important to remember that these changes happen at different times for
+       everyone. Being smaller or bigger than other girls is normal as each child experiences
+       puberty at her own time.
     </string>
 
     <string name="what_is_sex_details">
-        "<b>What is sex?</b>\n"
-        "Sex is defined as the activities you perform on yourself or with someone else that gives"
-        "you a sexual feeling and pleasure.\n"
-        "Sexual activities range from kissing, touching and the actual act intercourse. It can be"
-        "fan but on the other hand, sex is concerned with huge risks.\n"
+       <b>What is sex?</b>\n
+       Sex is defined as the activities you perform on yourself or with someone else that gives
+       you a sexual feeling and pleasure.\n
+       Sexual activities range from kissing, touching and the actual act intercourse. It can be
+       fan but on the other hand, sex is concerned with huge risks.\n
     </string>
 
     <string name="sexuality_details">
-        "<b>What is sexuality?</b>\n"
-        "Sexuality is defined as the capacity of having sexual feelings or desires. Can also mean"
-        "sexual orientation.\n"
-        "Sexuality gives you the idea on sex (good and bad) but having these ideas does not mean"
-        "one is ready for sex.\n"
+       <b>What is sexuality?</b>\n
+       Sexuality is defined as the capacity of having sexual feelings or desires. Can also mean
+       sexual orientation.\n
+       Sexuality gives you the idea on sex (good and bad) but having these ideas does not mean
+       one is ready for sex.\n
     </string>
 
     <string name="delaying_sex_details">
-        "<b>Delaying Sex</b>\n"
-        "Even though having sex is a personal choice, its good to have it at the right time when"
-        "you are mature enough. So for one to have sex, they should be well conversant about the"
-        "risks involved and how to prevent them.\n"
-        "When you are young, mostly during puberty, many of us are uncomfortable with showing our"
-        "bodies and private parts. This does not mean you are abnormal, it just means you are not"
-        "ready to have sex. But do not worry, time will come when you are mature enough.\n"
+       <b>Delaying Sex</b>\n
+       Even though having sex is a personal choice, its good to have it at the right time when
+       you are mature enough. So for one to have sex, they should be well conversant about the
+       risks involved and how to prevent them.\n
+       When you are young, mostly during puberty, many of us are uncomfortable with showing our
+       bodies and private parts. This does not mean you are abnormal, it just means you are not
+       ready to have sex. But do not worry, time will come when you are mature enough.\n
     </string>
 
     <string name="sex_wrong_reasons_details">
-        "<b>Wrong reasons to have Sex</b>\n"
-        "You should never have sex for the following reasons;\n"
-        "Because you are lonely, drunk, high.\n"
-        "Because someone else wants you to.\n"
-        "Because you think someone owes it to you or you owe it to someone.\n"
-        "Because of peer pressure i.e wanting to fit in a particular group.\n"
-        "Because you want to prove to someone that your grown up.\n"
-        "Because you think having sex will make someone love you or gain popularity and influence.\n"
-        "When you are afraid to say NO to a person.\n"
-        "When you think having a baby will make your bf stay in your life.\n"
-        "When you want someone to return a favor.\n"
-        "When you want to hurt someone's feelings."
+       <b>Wrong reasons to have Sex</b>\n
+       You should never have sex for the following reasons:-\n\n
+       Because you are lonely, drunk, high.\n
+       •Because someone else wants you to.\n
+       •Because you think someone owes it to you or you owe it to someone.\n
+       •Because of peer pressure i.e wanting to fit in a particular group.\n
+       •Because you want to prove to someone that your grown up.\n
+       •Because you think having sex will make someone love you or gain popularity and influence.\n
+       •When you are afraid to say NO to a person.\n
+       •When you think having a baby will make your boyfriend stay in your life.\n
+       •When you want someone to return a favor.\n
+       •When you want to hurt someone's feelings.
     </string>
 
     <string name="sexual_intercourse_details">
-        "<b>What is Sexual Intercourse?</b>\n"
-        "Sexual intercourse is the act of inserting the penis into the vagina that brings out"
-        "pleasure and satisfaction for both women and men.\n"
-        "When intercourse takes place without planning, there are higher risks of unwanted"
-        "pregnancies and can also increase the risk of contracting sexually transmitted infections"
-        "and HIV/AIDS.\n"
+       <b>What is Sexual Intercourse?</b>\n
+       Sexual intercourse is the act of inserting the penis into the vagina that brings out
+       pleasure and satisfaction for both women and men.\n
+       When intercourse takes place without planning, there are higher risks of unwanted
+       pregnancies and can also increase the risk of contracting sexually transmitted infections
+       and HIV/AIDS.\n
     </string>
 
     <string name="masturbation_details">
-        "<b>Masturbation</b>\n\n"
-        "Masturbation is the stimulation of the genitals to achieve sexual arousal and pleasure,"
-        "usually to the point of orgasm (sexual climax). It is commonly done by touching, stroking,"
-        "or massaging the penis or clitoris until an orgasm is achieved. Some women also use"
-        "stimulation of the vagina to masturbate or use "sex toys," such as a vibrator.\n\n"
-        <b>Who Masturbates?</b>
-        "Just about everybody. Masturbation is a very common behavior, even among people"
-        "who have a sex partner. In one national study, 95% of males and 89% of females reported"
-        "that they have masturbated.\n"
-        "Masturbation is the first sexual act experienced by most males and females. In young"
-        "children, masturbation is a normal part of the growing child's exploration of his"
-        "or her body.\n"
-        "Most people continue to masturbate in adulthood, and many do so throughout their lives.\n"
-        "It becomes unhealthy when you start doing it all the time and can cause back aches but"
-        "does not cause STIs nor pregnancy.\n"
+       <b>Masturbation</b>\n
+       Masturbation is the stimulation of the genitals to achieve sexual arousal and pleasure,
+       usually to the point of orgasm (sexual climax). It is commonly done by touching, stroking,
+       or massaging the penis or clitoris until an orgasm is achieved. Some women also use
+       stimulation of the vagina to masturbate or usesex toys,such as a vibrator.\n\n
+        <b>Who Masturbates?</b>\n
+       Just about everybody. Masturbation is a very common behavior, even among peoplewho have a sex
+        partner. In one national study, 95% of males and 89% of females reported that they have
+        masturbated.\n\n
+       Masturbation is the first sexual act experienced by most males and females. In young children,
+        masturbation is a normal part of the growing child's exploration of his or her body.\n\n
+       Most people continue to masturbate in adulthood, and many do so throughout their lives.\n
+       It becomes unhealthy when you start doing it all the time and can cause back aches but
+       does not cause STIs nor pregnancy.
     </string>
 
     <string name="sexual_orientation_details">
-        "<b>Sexual Orientation</b>\n"
-        "When one reaches puberty and on wards, sexual attraction grows and increases and it is"
-        "natural and the gender you are attracted to defines the <b>sexual orientation</b> but does"
-        "not mean you are ready to have sex.\n"
-        "Sexual Orientation is something you realize with in you and can not be forced on you."
-        "However, sometimes during adoloscence, you can get confused about your own body and also"
-        "about your prefernce and feelings.\n"
-        " • If you are attracted to the opposite sex, then you are <b>heterosexual</b>.\n"
-        " • If you are attracted to the person of the same gender, the you are homosexual i.e"
-        "<b>lesbians</b> (woman to woman) and <b>gay</b> (man to man).\n"
-        " • If you are equally attracted to people of the same sex and opposite sex, then you are"
-        "a <b>bisexual.</b>"
+       <b>Sexual Orientation</b>\n
+       When one reaches puberty and on wards, sexual attraction grows and increases and it is
+        natural and the gender you are attracted to defines the <b><i>sexual orientation</i></b> but
+        it does not mean you are ready to have sex.\n\n
+       Sexual Orientation is something you realize with in you and can not be forced on you. However,
+        sometimes during adoloscence, you can get confused about your own body and also about your
+        prefernce and feelings.\n\n
+        • If you are attracted to the opposite sex, then you are <b><i>heterosexual</i></b>.\n
+        • If you are attracted to the person of the same gender, the you are homosexual i.e
+        <b><i>lesbians</i></b> (woman to woman) and <b><i>gay</i></b> (man to man).\n
+        • If you are equally attracted to people of the same sex and opposite sex, then you are a
+        <b><i>bisexual.</i></b>
     </string>
 
     <string name="consent_details">
-        "<b>Consent</b>\n"
-        "Sexual activities are extremely personal. Always respect yourself and your partner as"
-        "well. One must take consent of the other person even for the act of kissing or touching"
-        "their body parts.\n"
-        "If the person says NO then its a NO, you should respect your partner's decision. Hence"
-        "do not force the person physically or emotionally.\n"
-        "Any sexual activity performed without the consent of the other person is considered"
-        "<b>sexual assault</b>"
-        "Sexual assault takes many forms such as forced sexual intercourse, kissing, hugging,"
-        "touching, showing private parts to the other person, masturbating in front of people and"
-        "verbally abusing someone in a sexual tone.\n"
+       <b>Consent</b>\n
+       Sexual activities are extremely personal. Always respect yourself and your partner as
+       well. One must take consent of the other person even for the act of kissing or touching
+       their body parts.\n
+       If the person says NO then its a NO, you should respect your partner's decision. Hence
+       do not force the person physically or emotionally.\n
+       Any sexual activity performed without the consent of the other person is considered
+       <b>sexual assault</b>
+       Sexual assault takes many forms such as forced sexual intercourse, kissing, hugging,
+       touching, showing private parts to the other person, masturbating in front of people and
+       verbally abusing someone in a sexual tone.\n
     </string>
 
     <string name="whats_fertility_details">
-        "<b>What is fertility?</b>\n"
-        "Fertility is the ability to reproduce and bare a child. Men who are fertile are able to"
-        "produce enough healthy sperms to father children. On the other hand, women who are also"
-        "fertile are able to get pregnant and carry the baby inside their uterus and then conceive"
-        "nine months later.\n"
-        "Chances of getting unwanted pregnancies increase when the sexual desires increase"
-        "especially in youths from the age of 15 years to 23 years."
+       <b>What is fertility?</b>\n
+       Fertility is the ability to reproduce and bare a child. Men who are fertile are able to
+       produce enough healthy sperms to father children. On the other hand, women who are also
+       fertile are able to get pregnant and carry the baby inside their uterus and then conceive
+       nine months later.\n
+       Chances of getting unwanted pregnancies increase when the sexual desires increase
+       especially in youths from the age of 15 years to 23 years.
     </string>
 
     <string name="auses_of_pregnancy_details">
-        "<b>Causes of pregnancy</b>\n"
-        "Pregnancy can occur during varginal sexual intercourse when the man ejaculates or"
-        "pre-ejaculates into the woman's vagina and  the sperms meet the egg.\n"
-        "Pre-ejaculating involves a small amount of sperms that can be released by the penis before"
-        "complete ejaculation.\n"
+       <b>Causes of pregnancy</b>\n
+       Pregnancy can occur during varginal sexual intercourse when the man ejaculates or
+       pre-ejaculates into the woman's vagina and  the sperms meet the egg.\n
+       Pre-ejaculating involves a small amount of sperms that can be released by the penis before
+       complete ejaculation.\n
     </string>
 
     <string name="avoiding_pregnancy_details">
-        "<b>How one can avoid pregnancy</b>\n"
-        "The most certain way to a void pregnancy is abstinence (not engaging in"
-        "sexual intercourse at all).Delay sex until you are ready and mature enough to deal with the"
-        "effects of sex.\n"
-        "The other way is the use of modern contraceptives correctly.\n"
+       <b>How one can avoid pregnancy</b>\n
+       The most certain way to a void pregnancy is abstinence (not engaging in
+       sexual intercourse at all).Delay sex until you are ready and mature enough to deal with the
+       effects of sex.\n
+       The other way is the use of modern contraceptives correctly.\n
     </string>
 
     <string name="when_can_a_female_get_pregnant_details">
-        "<b><u>When can a female get pregnant?</u></b>\n"
-        "A woman can get pregnant any time of the month or in any phase of her menstrual cycle. One"
-        "can even get pregnant if she has a sexual intercourse during menstruation.\n"
-        "However, the chances of getting pregnant is much higher, few days before and after the"
-        "time of ovulation.\n"
-        "Younger girls (aged 8-9 years) can even get pregnant if they have sexual intercourse even"
-        "before menarche, when the ovulation process has started."
+       <b><u>When can a female get pregnant?</u></b>\n
+       A woman can get pregnant any time of the month or in any phase of her menstrual cycle. One
+       can even get pregnant if she has a sexual intercourse during menstruation.\n
+       However, the chances of getting pregnant is much higher, few days before and after the
+       time of ovulation.\n
+       Younger girls (aged 8-9 years) can even get pregnant if they have sexual intercourse even
+       before menarche, when the ovulation process has started.
     </string>
 
     <string name="time_taken_to_be_pregnant_details">
-        "<b>How long does it take afetr sex to get pregnant?</b>\n"
-        " Pregnancy does not start at the time when sperm is ejaculated into the vagina."
-        "It can take up to 3 days for the sperm to meet the egg and fertilize.\n\n"
-        "During these days, sperms travel to the uterus through the fallopian tubes, and then wait"
-        "for the egg to release an ovary.\n"
-        "It then takes another 10 days for the fertilized egg to attach itself to the lining of the"
-        "uterus and this is called <i>implantation</i>. Pregnacy then starts after these processes.\n"
-        "However, sperms travel very fast into the female body and cannot be cleaned or washed thus"
-        "you cannot avoid HIV/STIs or unwanted pregnancy by just washing away the sperms.\n"
+       <b>How long does it take after sex to get pregnant?</b>\n
+        Pregnancy does not start at the time when sperm is ejaculated into the vagina.
+       It can take up to 3 days for the sperm to meet the egg and fertilize.\n\n
+       During these days, sperms travel to the uterus through the fallopian tubes, and then wait
+       for the egg to release an ovary.\n
+       It then takes another 10 days for the fertilized egg to attach itself to the lining of the
+       uterus and this is called <i>implantation</i>. Pregnacy then starts after these processes.\n
+       However, sperms travel very fast into the female body and cannot be cleaned or washed thus
+       you cannot avoid HIV/STIs or unwanted pregnancy by just washing away the sperms.\n
         </string>
 
     <string name="fertilization_details">
-        "<b>What is fertilization?</b>\n"
-        "The joining of the egg and sperms is called fertilization. It occurs after a sexual"
-        "intercourse when sperms are ejaculted into the vagina and meet the egg. Usually, out of"
-        "a million sperms released, only one sperm meets the egg and gets fertilized.\n"
+       <b>What is fertilization?</b>\n
+       The joining of the egg and sperms is called fertilization. It occurs after a sexual
+       intercourse when sperms are ejaculted into the vagina and meet the egg. Usually, out of
+       a million sperms released, only one sperm meets the egg and gets fertilized.\n
     </string>
 
     <string name="implantation_details">
-        "<b>What is Implantation?</b>\n"
-        "The fertilized egg moves down the follopian tube and divides into more cells, forming a"
-        "ball. The ball of the cells reaches the uterus about 3-4 days after fertilization. The"
-        "ball floats in the uterus for another 2-3 days.\n\n"
-        "Pregnancy begins only if the ball cells attach to the ligning of the uterus and this is"
-        "called <i>Implantation</i>.\n"
-        "It usually starts about six days after fertilization and takes about 3-4 days to"
-        "be complete. Up to half of all fertilized eggs never implant, they pass out of women's"
-        "bodies during menstruation.\n"
-        "If implantation takes place successfully, the attached ball of cells further divides to"
-        "form the shapes and size of the baby along with the formation of the placenta.\n"
+       <b>What is Implantation?</b>\n
+       The fertilized egg moves down the follopian tube and divides into more cells, forming a
+       ball. The ball of the cells reaches the uterus about 3-4 days after fertilization. The
+       ball floats in the uterus for another 2-3 days.\n\n
+       Pregnancy begins only if the ball cells attach to the ligning of the uterus and this is
+       called <i>Implantation</i>.\n
+       It usually starts about six days after fertilization and takes about 3-4 days to
+       be complete. Up to half of all fertilized eggs never implant, they pass out of women's
+       bodies during menstruation.\n
+       If implantation takes place successfully, the attached ball of cells further divides to
+       form the shapes and size of the baby along with the formation of the placenta.\n
     </string>
 
     <string name="determine_pregnancy_details">
-        "Missing the period would be the first sign of pregnancy."
+        <b>How can one know if she is pregnant</b>\n
+         Missing the period would be the first sign of pregnancy.\n
+        If ou have had sex, wether it is was protected with use of contraceptives or it was
+        unprotected, if your period is late, always take a regnancy test. You will have to consul a
+        doctor for further information if the pregnancy test turnes out to be positive\n\n
+        If you get pregnant at a young age like in teenage, it is often risky for your health.\n\n
 
+        In such circumstances, you will have to inform your parents, or any elders you trust and
+        must visit a doctor to discuss about further plans.\n
+        There are many help centers tht can help adolescents and youth like you and they wont judge
+        you and your information will remain confidential with them\n\n
+        If you find out that you are pregnant and it was not planned, never ever do someting on your
+        own or put something inside your vagina or harm yourself or your body. Always consult  doctor
+        as soon as you find out that you are pregnant
     </string>
 
     <string name="pregnancy_myths_details">
-        "If a male does not ejaculate dring sexual intercourse,girl can't get pregnant.\n"
-        "No, a woman can get pregnant because of the pre-ejaculated semen can contain sperms, so"
-        "there are chances of getting pregnant even when sperms are not ejaculated into the"
-        "vagina."
+       If a male does not ejaculate dring sexual intercourse,girl can\'t get pregnant.\n
+       No, a woman can get pregnant because of the pre-ejaculated semen can contain sperms, so
+       there are chances of getting pregnant even when sperms are not ejaculated into the vagina.
     </string>
 
     <string name="female_puberty_details">
-        "<b>What is puberty in females?</b>\n"
-        "Puberty is a stage of transition from childhood to adulthood. All of us grow through this
-        difficult stage with changes in our body and mind.\n"
-        "It begins at different ages (from 9 years) depending on different people thus for some
-        it starts early and others late. Common changes girls can expect include;\n"
-        "•	Enlargement of breasts.\n"
-        "•	Growth of pubic hair.\n"
-        "•	Change in body shape. Girls have lesser muscle mass and more fat mass than boys do,
+       <b>What is puberty in females?</b>\n
+       Puberty is a stage of transition from childhood to adulthood. All of us grow through this
+        difficult stage with changes in our body and mind.\n
+       It begins at different ages (from 9 years) depending on different people thus for some
+        it starts early and others late. Common changes girls can expect include;\n
+       •	Enlargement of breasts.\n
+       •	Growth of pubic hair.\n
+       •	Change in body shape. Girls have lesser muscle mass and more fat mass than boys do,
         so during puberty many girls tend to gain weight, gain hips. It is a normal process though,
-        so girls shouldn’t worry.\n"
-        "•	Menstruation. The first period in a girl’s life is called menarche, it may begin as
+        so girls shouldn’t worry.\n
+       •	Menstruation. The first period in a girl’s life is called menarche, it may begin as
         early as 8 years to as late as 16 years. It is the time when a girl starts bleeding
-        from the vagina for 4-5 days every month."
+        from the vagina for 4-5 days every month.
     </string>
 
     <string name="female_organs_details">
@@ -501,7 +510,7 @@
     </string>
 
     <string name="female_organs_vulval_details">
-        <b><u>VULVA</u></b>\n
+        <b><u>Vulva</u></b>\n
         The vulval is made up of other reproductive parts among which include the following:-\n\n
         <b>Labia</b>\n
         Labia stands for lip in Latin language because it looks like lips. Labia covers rest of the
@@ -565,210 +574,212 @@
 
 
     <string name="menstruation_details">
-        "<b>What is Menstruation?</b>"
-        "It is the monthly bleeding that takes place at the end of a menstruation cycle.\n"
-        "Following ovulation, if the egg doesn’t meet the sperm, it is not fertilized. In this case
+       <b>What is Menstruation?</b>\n
+       It is the monthly bleeding that takes place at the end of a menstruation cycle.\n
+       Following ovulation, if the egg doesn’t meet the sperm, it is not fertilized. In this case
         hormones drop and the inner lining of the uterus that was preparing itself for
-        pregnancy begins to shed which causes bleeding.\n"
-        "The blood travels through the cervix to the vagina and comes out of the vagina opening.\n"
-        "The bleeding days and amount of bleeding vary from person to person."
+        pregnancy begins to shed which causes bleeding.\n
+       The blood travels through the cervix to the vagina and comes out of the vagina opening.\n
+       The bleeding days and amount of bleeding vary from person to person.
     </string>
 
     <string name="menstruation_hygiene_details">
-        "<b>MENSTRUATION HYGIENE</b>\n"
-        "It is very important for girls to have a good hygiene during menstruation i.e. keep the
+       <b>MENSTRUATION HYGIENE</b>\n
+       It is very important for girls to have a good hygiene during menstruation i.e. keep the
         genitalia clean and dry during menstruation to prevent creation of room for bacteria and
-        other microorganisms to grow which can lead to an infection.\n"
-        "There are different menstrual hygiene products a girl can use and the include;\n"
-        "•	Sanitary pads.\n"
-        "•	Tampons.\n"
-        "•	Menstrual cups.\n"
-        "•	Reusable cotton clothes.\n"
+        other microorganisms to grow which can lead to an infection.\n
+       There are different menstrual hygiene products a girl can use and the include;\n
+       •	Sanitary pads.\n
+       •	Tampons.\n
+       •	Menstrual cups.\n
+       •	Reusable cotton clothes.\n
     </string>
 
     <string name="menstruation_concerns_details">
-        "<b>Common menstrual concerns.</b>\n"
-        "Most girls face emotional and physical problems during menstruation."
-        And below is some detail of how to deal with it;\n"
-        "<b>Premenstrual symptoms.</b> 40% of women/girls experience it and does not have any"
-        specific characteristics though different people encounter different issues.\n"
-        "Common ones are; irritability, mood swings and angry outbursts, feeling fullness in the"
-        "body. One can cope up with these issues by; eating healthy food, physical activities such"
-        "as exercise and sports and reducing the stress through having yoga classes.\n"
-        "<b>Pain during menstruation.</b> Most girls experience pain during menstruation because the"
-        "uterus contracts to push out blood from it. This can be moderated by;\n"
-        "•	Having exercises such as walking to improve blood flow.\n"
-        "•	Having a healthy diet.\n"
-        "•	Applying heat to your abdomen with a heating pad or a hot water bottle can"
-        "relieve the pain.\n"
-        "•	Taking a warm shower and having a massage can help relieve discomfort.\n"
-        "<b>Irregular cycles.</b> A normal cycle may vary from 28-35 days depending on an"
-        "individual.\n"
-        "In a young girl, there are lots of hormonal changes and the process of ovulation may not"
-        "have been normal yet. Thus, it is common for young girls to have irregular cycles until"
-        "the age of 21 years.\n"
-        "Sometimes factors like stress, and lack of nutrition can lead to irregular cycles. Hence it"
-        "is important to eat healthy and have regular exercises but if the irregularity persist,"
-        "seek medical attention from a doctor.\n"
+       <b>Common menstrual concerns.</b>\n
+       Most girls face emotional and physical problems during menstruation.
+        And below is some detail of how to deal with it;\n\n
+
+       <b>Premenstrual symptoms.</b> 40% of women/girls experience it and does not have any
+        specific characteristics though different people encounter different issues.\n
+       Common ones are; irritability, mood swings and angry outbursts, feeling fullness in the
+       body. One can cope up with these issues by; eating healthy food, physical activities such
+       as exercise and sports and reducing the stress through having yoga classes.\n\n
+
+       <b>Pain during menstruation.</b> Most girls experience pain during menstruation because the
+       uterus contracts to push out blood from it. This can be moderated by;\n
+       •	Having exercises such as walking to improve blood flow.\n
+       •	Having a healthy diet.\n
+       •	Applying heat to your abdomen with a heating pad or a hot water bottle can
+       relieve the pain.\n
+       •	Taking a warm shower and having a massage can help relieve discomfort.\n\n
+
+       <b>Irregular cycles.</b> A normal cycle may vary from 28-35 days depending on an
+       individual.\n
+       In a young girl, there are lots of hormonal changes and the process of ovulation may not
+       have been normal yet. Thus, it is common for young girls to have irregular cycles until
+       the age of 21 years.\n
+       Sometimes factors like stress, and lack of nutrition can lead to irregular cycles. Hence it
+       is important to eat healthy and have regular exercises but if the irregularity persist,
+       seek medical attention from a doctor.\n
     </string>
 
     <string name="menstruation_myths1_details">
-        "<b>A girl or woman is impure and dirty during menstruation, hence should not enter"
-        the kitchen or temples</b>"
-        "No! Menstruation is a natural process that indicates a healthy reproductive cycle and is"
-        not a judge of purity of cleanlness of a woman."
-        "However a woman is supposed to maintain hygiene during this period just like any other"
-        days.\n"
-        "There is nothing wrong with entering the kitchen or having or having your faith in God"
-        during this period."
+       <b>A girl or woman is impure and dirty during menstruation, hence should not enter
+        the kitchen or temples</b>\n
+       No! Menstruation is a natural process that indicates a healthy reproductive cycle and is
+        not a judge of purity of cleanlness of a woman.
+       However a woman is supposed to maintain hygiene during this period just like any other
+        days.\n
+       There is nothing wrong with entering the kitchen or having or having your faith in God
+        during this period.
     </string>
 
     <string name="menstruation_myths2_details">
-        "<b>A girl or woman having periods should just take a bath on the fourth day of
-            menstruation to purify her.</b>\n"
-        "No! A girl should take a bath everyday to maintain hygiene during menstruation or any
-        other days."
+       <b>A girl or woman having periods should just take a bath on the fourth day of
+            menstruation to purify her.</b>\n
+       No! A girl should take a bath everyday to maintain hygiene during menstruation or any
+        other days.
     </string>
 
     <string name="menstruation_myths3_details">
-        "<b>A girl should never discuss about her periods with other males</b>\n"
-        "No, even men can provide help during menstruation such as counselling, be supportive. So"
-        "both males and females are involved."
+       <b>A girl should never discuss about her periods with other males</b>\n
+       No, even men can provide help during menstruation such as counselling, be supportive. So
+       both males and females are involved.
     </string>
 
     <string name="menstruation_myths4_details">
-        "<b> A girl or a woman should never touch a man during menstruation</b>"
+       <b> A girl or a woman should never touch a man during menstruation</b>
 
 
     </string>
 
     <string name="menstruation_myths5_details">
-        "<b>A girl or a woman should not exercise during menstruation</b>\n"
-        "No, actually exercises and yoga help improve blood flow and do not harm your body.\n"
+       <b>A girl or a woman should not exercise during menstruation</b>\n
+       No, actually exercises and yoga help improve blood flow and do not harm your body.\n
     </string>
 
     <string name="menstruation_myths6_details">
-        "<b>A girl or a woman should not swim during menstruation</b>\n"
-        "No, one can do any activity she wants during menstruation just like in any other days."
-        "It is just that some sanitary napkins are not water proof, hence there will be some"
-        "leaking.\n"
+       <b>A girl or a woman should not swim during menstruation</b>\n
+       No, one can do any activity she wants during menstruation just like in any other days.
+       It is just that some sanitary napkins are not water proof, hence there will be some
+       leaking.\n
     </string>
 
     <string name="menstruation_myths7_details">
-        "<b>Virgins should not use tampons</b>\n"
-        "No, tamptons serve the same purpose as sanitary napkins and do not have any negative"
-        "effect on one's virginity. However, it is important to know how to use them correctly.\n"
+       <b>Virgins should not use tampons</b>\n
+       No, tamptons serve the same purpose as sanitary napkins and do not have any negative
+       effect on one's virginity. However, it is important to know how to use them correctly.\n
     </string>
 
     <string name="menstruation_myths9_details">
-        "<b>One must not have sex during menstruation because the menstruation blood releases"
-            "toxins into the male body</b>\n"
-        "No, there is no problem having sex during this period as long as both parties agree on the"
-        "issue since it is not hygienic.\n"
-        "However, having sex during this period increases the chance of getting HIV and STIs as well"
-        "as pregnancy.\n"
+       <b>One must not have sex during menstruation because the menstruation blood releases toxins
+           into the male body</b>\n
+       No, there is no problem having sex during this period as long as both parties agree on the
+       issue since it is not hygienic.\n
+       However, having sex during this period increases the chance of getting HIV and STIs as well
+       as pregnancy.\n
     </string>
 
     <string name="ovulation_details">
-        "<b><u>What is Ovulation</u></b>"
-        "This is a time when an egg is released from the ovarian follicles in the ovaries with"
-        "the help of different female hormones.\n"
-        "The egg is released in the ovary and then travels to the fallopian tube and fertilization"
-        "takes place if a sperm meets an ovum.\n"
+       <b><u>What is Ovulation</u></b>\n
+       This is a time when an egg is released from the ovarian follicles in the ovaries with
+       the help of different female hormones.\n
+       The egg is released in the ovary and then travels to the fallopian tube and fertilization
+       takes place if a sperm meets an ovum.\n
     </string>
 
     <string name="male_organs_details">
-        "<b><u>What are Male Organs?</u></b>\n"
-        " Unlike the female reproductive system, most of the male reproductive system is located"
-        "outside of the body. These external structures include the penis, scrotum, and"
-        "testicles.\n\n"
+       <b><u>What are Male Organs?</u></b>\n
+        Unlike the female reproductive system, most of the male reproductive system is located
+       outside of the body. These external structures include the penis, scrotum, and
+       testicles.\n\n
 
-        "<b><u>Penis:</u></b>\n"
-        "This is the male organ used in sexual intercourse. It has three parts: the root, which"
-        "attaches to the wall of the abdomen; the body, or shaft; and the glans, which is the"
-        "cone-shaped part at the end of the penis.\n"
-        "The glans, also called the head of the penis, is covered with a loose layer of skin"
-        "called foreskin. This skin is sometimes removed in a procedure called circumcision.\n"
-        "The opening of the urethra, the tube that transports semen and urine, is at the tip"
-        "of the penis. The glans of the penis also contains a number of sensitive nerve endings.\n"
-        "The body of the penis is cylindrical in shape and consists of three circular shaped"
-        "chambers. These chambers are made up of special, sponge-like tissue."
-        "This tissue contains thousands of large spaces that fill with blood when the man is"
-        "sexually aroused.\n"
-        "As the penis fills with blood, it becomes rigid and erect, which allows for penetration"
-        "during sexual intercourse. The skin of the penis is loose and elastic to accommodate"
-        "changes in penis size during an erection."
+       <b><u>Penis:</u></b>\n
+       This is the male organ used in sexual intercourse. It has three parts: the root, which
+       attaches to the wall of the abdomen; the body, or shaft; and the glans, which is the
+       cone-shaped part at the end of the penis.\n
+       The glans, also called the head of the penis, is covered with a loose layer of skin
+       called foreskin. This skin is sometimes removed in a procedure called circumcision.\n
+       The opening of the urethra, the tube that transports semen and urine, is at the tip
+       of the penis. The glans of the penis also contains a number of sensitive nerve endings.\n
+       The body of the penis is cylindrical in shape and consists of three circular shaped
+       chambers. These chambers are made up of special, sponge-like tissue.
+       This tissue contains thousands of large spaces that fill with blood when the man is
+       sexually aroused.\n
+       As the penis fills with blood, it becomes rigid and erect, which allows for penetration
+       during sexual intercourse. The skin of the penis is loose and elastic to accommodate
+       changes in penis size during an erection.\n\n
 
-        "<b><u>Scrotum:</u></b>\n"
-        "This is the loose pouch-like sac of skin that hangs behind and below the penis.\n"
-        "It contains the testicles (also called testes), as well as many nerves and blood vessels.\n"
-        "The scrotum acts as a "climate control system" for the testes. For normal sperm"
-        "development, the testes must be at a temperature slightly cooler than body temperature."
-        "Special muscles in the wall of the scrotum allow it to contract and relax, moving the"
-        "testicles closer to the body for warmth or farther away from the body to cool the"
-        "temperature.\n\n"
-        "<b><u>Testicles (testes):</u></b>\n"
-        "These are oval organs about the size of large olives that lie in the scrotum, secured"
-        "at either end by a structure called the spermatic cord. Most men have two testes.\n"
-        "The testes are responsible for making testosterone, the primary male sex hormone, and for"
-        "generating sperm. Within the testes are coiled masses of tubes called seminiferous"
-        "tubules. These tubes are responsible for producing sperm cells."
+       <b><u>Scrotum:</u></b>\n
+       This is the loose pouch-like sac of skin that hangs behind and below the penis.\n
+       It contains the testicles (also called testes), as well as many nerves and blood vessels.\n
+       The scrotum acts as aclimate control system for the testes. For normal sperm development,
+        the testes must be at a temperature slightly cooler than body temperature.\n
+       Special muscles in the wall of the scrotum allow it to contract and relax, moving the
+       testicles closer to the body for warmth or farther away from the body to cool temperatures.\n\n
+       <b><u>Testicles (testes):</u></b>\n
+       These are oval organs about the size of large olives that lie in the scrotum, secured
+       at either end by a structure called the spermatic cord. Most men have two testes.\n
+       The testes are responsible for making testosterone, the primary male sex hormone, and for
+       generating sperm. Within the testes are coiled masses of tubes called seminiferous
+       tubules. These tubes are responsible for producing sperm cells.
     </string>
 
     <string name="semens_details">
-        "<b><u>What is Semen?</u></b>\n"
-        "Semen is a fluid that is ejaculated from the penis. It is white in color and mucus like"
-        "in nature.\n"
-        "It consists of fluid collected from the vas deferens, fluid from prostate and seminal"
-        "vesicles.\n"
-        "Semen contains sperm (reproductive cells), is expelled (ejaculated) through the end of"
-        "the penis when the man reaches sexual climax (orgasm). When the penis is erect, the flow"
-        "of urine is blocked from the urethra, allowing only semen to be ejaculated at orgasm."
+       <b><u>What is Semen?</u></b>\n
+       Semen is a fluid that is ejaculated from the penis. It is white in color and mucus like
+       in nature.\n
+       It consists of fluid collected from the vas deferens, fluid from prostate and seminal
+       vesicles.\n
+       Semen contains sperm (reproductive cells), is expelled (ejaculated) through the end of
+       the penis when the man reaches sexual climax (orgasm). When the penis is erect, the flow
+       of urine is blocked from the urethra, allowing only semen to be ejaculated at orgasm.
     </string>
 
     <string name="sperm_details">
-        "<b><u>What are Sperms?</u></b>\n"
-        "Sperm is the male reproductive cell. Boys start producing sperms from puberty.\n"
-        "The testes produce up to 120 sperms per day and most of them are stored in the
-        vas deferens.\n"
-        "They can remain stored maintaining their fertility up to one month.\n"
-        "During the storage, the sperms are in an inactive state and become active during"
-        "ejaculation(after a sexual activity) and are capable of fertilization."
-        "when it meets the ovum. Only one sperm is needed for fertilization."
+       <b><u>What are Sperms?</u></b>\n
+       Sperm is the male reproductive cell. Boys start producing sperms from puberty.\n
+       The testes produce up to 120 sperms per day and most of them are stored in the
+        vas deferens.\n
+       They can remain stored maintaining their fertility up to one month.\n
+       During the storage, the sperms are in an inactive state and become active during
+       ejaculation(after a sexual activity) and are capable of fertilization.
+       when it meets the ovum. Only one sperm is needed for fertilization.
     </string>
 
     <string name="male_hormones_details">
-        "<b><u>What are male hormones?</u></b>\n"
-        "Hormones are the chemical substances that are released into the body by certain glands"
-        "and are mainly controlled by the brain.\n"
-        "They influence the behavior, moods and body changes. Some hormones are specifically"
-        "responsible for male characteristics and sperm formation and these include;\n\n"
+       <b><u>What are male hormones?</u></b>\n
+       Hormones are the chemical substances that are released into the body by certain glands
+       and are mainly controlled by the brain.\n
+       They influence the behavior, moods and body changes. Some hormones are specifically
+       responsible for male characteristics and sperm formation and these include;\n\n
 
-        "<b><u>Testosterone</u></b>\n"
-        "Testerone is the hormone responsible for sperm formation. When a male baby is inside the"
-        "mother's womb, testosterone is produced until puberty.\n"
-        "These hormones are mainly produced by the testes in men. The secretion of testesterone is"
-        "controlled by the hormones screted by piuitary gland located in the brain.\n"
-        "This hormone is responsible for;\n"
-        " •Enlargement of sexual organs.\n"
-        " •Distribution of body hair.\n"
-        " •Changes in the voice.\n"
-        " •Muscle development.\n"
-        " •Bone growth.\n\n"
+       <b><u>Testosterone</u></b>\n
+       Testerone is the hormone responsible for sperm formation. When a male baby is inside the
+       mother's womb, testosterone is produced until puberty.\n
+       These hormones are mainly produced by the testes in men. The secretion of testesterone is
+       controlled by the hormones screted by piuitary gland located in the brain.\n
+       This hormone is responsible for;\n
+        •Enlargement of sexual organs.\n
+        •Distribution of body hair.\n
+        •Changes in the voice.\n
+        •Muscle development.\n
+        •Bone growth.\n\n
 
-        "<b><u>Luteinizing Hormone(LH)</u></b>\n"
-        "Pituitary gland in the brain secretes and controls most of the hormones in our body."
-        "LH is one of the sex hormones produced by pituitary glands. In boys, it mainly controls the"
-        "secretion of testosterone from the testes.\n"
-        "If testes produce less testosterone, LH encourages the testes to produce more.\n\n"
+       <b><u>Luteinizing Hormone(LH)</u></b>\n
+       Pituitary gland in the brain secretes and controls most of the hormones in our body.
+       LH is one of the sex hormones produced by pituitary glands. In boys, it mainly controls the
+       secretion of testosterone from the testes.\n
+       If testes produce less testosterone, LH encourages the testes to produce more.\n\n
 
-        "<b><u>Estrogens</u></b>\n"
-        "Boys secrete estrogens but in lesser amount and help in sperm formation.\n"
-        "<b>Follicle Stimulting Hormone (FSH)</b>\n"
-        "Produced by the pituitary gland and facilitates sperm formation.\n\n"
+       <b><u>Estrogens</u></b>\n
+       Boys secrete estrogens but in lesser amount and help in sperm formation.\n
+       <b>Follicle Stimulting Hormone (FSH)</b>\n
+       Produced by the pituitary gland and facilitates sperm formation.\n\n
 
-        "<b><u>Growth Hormones</u></b>\n"
-        "These are mainly responsible for overall growth but also help in sperm formation."
+       <b><u>Growth Hormones</u></b>\n
+       These are mainly responsible for overall growth but also help in sperm formation.
     </string>
 
     <string name="signs_btn">Signs of healthy and unhealthy relationships</string>
@@ -784,69 +795,71 @@
     <string name="details_btn">Relationship</string>
 
     <string name="relationship_details">
-        "<b><u>Relationship</u></b>\n"
-        "Adolescence and youth is the phase of life when you start exploring more about your"
-        "relationships."
+       <b><u>Relationship</u></b>\n
+       Adolescence and youth is the phase of life when you start exploring more about your
+       relationships.
         </string>
 
     <string name="relationship_friend_details">
-        "<b><u>Relationship</u></b>\n"
-        "A key to successful friendship is being with the right company. So learn to choose the"
-        "right friends as a youth because they have a bigger influence in your life.\n\n"
-        "<b><u>A real Friend</u></b>\n"
-        " • Someone you are natural and free with.\n"
-        " • Someone yo do not work hard to impress.\n"
-        " • A person with whom you share common interests and understands you.\n"
-        "<b>Do not have company with people that;</b>"
-        " •bully you and disrespect you.\n"
-        " •Force you into doing risky and unhealthy activities such as smoking, alcohol, risky"
-        "sexual activities.\n"
+       <b><u>Relationship</u></b>\n
+       A key to successful friendship is being with the right company. So learn to choose the
+       right friends as a youth because they have a bigger influence in your life.\n\n
+       <b><u>A real Friend</u></b>\n
+        • Someone you are natural and free with.\n
+        • Someone yo do not work hard to impress.\n
+        • A person with whom you share common interests and understands you.\n\n
+       <b>Do not have company with people that:-</b>
+        •bully you and disrespect you.\n
+        •Force you into doing risky and unhealthy activities such as smoking, alcohol, risky
+       sexual activities.\n
 
     </string>
 
     <string name="relationship_key_details">
-        "<b><u>Key to healthy relationships</u></b>\n"
-        "The first step towards a healthy relationship begins from you.\n"
-        "<b>Communicate.</b>\n"
-        "Communication is a fundamental aspect in a successful relationship and it
-        "helps both parties to understand each other very well. It is a two way thing where by both
-        "parties have to be involved so as to create a smooth relationship.\n"
-        "<b>Learn to listen.</b>\n"
-        "You should be able to listen to your partner no matter the circumstances
-        and this creates trust.\n"
-        "<b>Be honest.</b>\n"
-        "Always be faithful and truthful to your partner.\n"
-        "Have a positive attitude.\n"
-        "Always appreciate your partner and be supportive where necessary.\n"
+       <b><u>Key to healthy relationships</u></b>\n
+       The first step towards a healthy relationship begins from you.\n\n
+
+       <b>Communicate.</b>\n
+       Communication is a fundamental aspect in a successful relationship and it
+       helps both parties to understand each other very well. It is a two way thing where by both
+       parties have to be involved so as to create a smooth relationship.\n\n
+       <b>Learn to listen.</b>\n
+       You should be able to listen to your partner no matter the circumstances and this creates
+        trust.\n\n
+
+       <b>Be honest.</b>\n
+       Always be faithful and truthful to your partner.\n
+       Have a positive attitude.\n
+       Always appreciate your partner and be supportive where necessary.\n
     </string>
 
     <string name="relationship_parents_details">
-        "<b><u>Relationship With Parents and Elders</u></b>\n"
-        "A relationship with your parents and elders may seem more complicated during this phase. In"
-        "most cases, you think you are old and big enough to make your own decisions which may be"
-        "rational.\n"
-        "You tend to think everything they tell you is not important but in real sense, they are"
-        "trying to protect you because you are precious to them and they love you.\n"
+       <b><u>Relationship With Parents and Elders</u></b>\n
+       A relationship with your parents and elders may seem more complicated during this phase. In
+       most cases, you think you are old and big enough to make your own decisions which may be
+       rational.\n
+       You tend to think everything they tell you is not important but in real sense, they are
+       trying to protect you because you are precious to them and they love you.\n
     </string>
 
     <string name="relationship_signs_details">
-        "<b>Signs of Healthy and Unhealthy Relationships</b>"
-        "A healthy relationship with someone special be it your girlfriend or boyfriend must"
-        "be mutual where:\n"
-        "• Both respect each other.\n"
-        "• Both parties respect and are honest with one another.\n"
-        "• Both clearly communicate no matter the circumstances and express themselves.\n"
-        "• Both have mutual consent for sexual activities and ready to go for an HIV test.\n"
+       <b>Signs of Healthy and Unhealthy Relationships</b>\n
+       A healthy relationship with someone special be it your girlfriend or boyfriend must
+       be mutual where:\n
+       • Both respect each other.\n
+       • Both parties respect and are honest with one another.\n
+       • Both clearly communicate no matter the circumstances and express themselves.\n
+       • Both have mutual consent for sexual activities and ready to go for an HIV test.\n
     </string>
 
     <string name="relationship_special_details">
-        "<b><u>Relationship with someone special</u></b>\n"
-        "As we grow older, it is natural for us to wish we could be special for that one person. We"
-        "also develop sexual feelings, feelings of intimacy and bonding with someone special. A"
-        "healthy relationship is always comfortable and less complicated.\n"
-        "Thus it is advised t have healthy relationships where;\n"
-        " •You can be free and natural with someone.\n"
-        " •You love and respect someone unconditionally.\n"
+       <b><u>Relationship with someone special</u></b>\n
+       As we grow older, it is natural for us to wish we could be special for that one person. We
+       also develop sexual feelings, feelings of intimacy and bonding with someone special. A
+       healthy relationship is always comfortable and less complicated.\n
+       Thus it is advised t have healthy relationships where;\n
+        •You can be free and natural with someone.\n
+        •You love and respect someone unconditionally.\n
     </string>
 
     <string name="temporary_btn">Temporary Methods</string>
@@ -858,110 +871,118 @@
     <string name="others">Others</string>
 
     <string name="intrauterine_contraceptives">
-        "<b><u>Intrauterine contraceptive device(IUCD) or Intrauterine device(IUD).</u></b>\n"
-        "It is a flexible, small T-shaped tube that is inserted inside the uterus.\n"
-        "It is effective for 12 years and is used by women who do not want to give birth for"
-        "a long period. There are various types of IUDs and the most common one is copper-T.\n"
-        "However, it requires a trained health worker, and can be accessed from"
-        "a health facility.\n"
+       <b><u>Intrauterine contraceptive device(IUCD) or Intrauterine device(IUD).</u></b>\n
+       It is a flexible, small T-shaped tube that is inserted inside the uterus.\n
+       It is effective for 12 years and is used by women who do not want to give birth for
+       a long period. There are various types of IUDs and the most common one is copper-T.\n
+       However, it requires a trained health worker, and can be accessed from
+       a health facility.\n
     </string>
 
     <string name="implants">
-        "<b><u>Hormonal contraceptive implants.</u></b>\n"
-        "These are small tubes that contain a form of progesterone hormone in them. A trained"
-        "health worker inserts the tubes under the skin of the woman’s upper arm. It"
-        "is effective for 5 years.\n"
-        "It releases the progesterone slowly into the woman’s body for a period of 5 years"
-        "and prevents ovulation and thickens mucus in the cervix which prevents fertilization.\n"
+       <b><u>Hormonal contraceptive implants.</u></b>\n
+       These are small tubes that contain a form of progesterone hormone in them. A trained
+       health worker inserts the tubes under the skin of the woman’s upper arm. It
+       is effective for 5 years.\n
+       It releases the progesterone slowly into the woman’s body for a period of 5 years
+       and prevents ovulation and thickens mucus in the cervix which prevents fertilization.\n
     </string>
 
     <string name="injection_contraceptives">
-        "<b><u>Contraceptive Injection.</u></b>\n"
-        "This is used by women who do not want to give birth for a long time. Just a single dose"
-        "of contraceptive injection can prevent pregnancy for 3 months.\n"
-        "The contraceptive injection is commonly known as DEPO based on the type of progesterone"
-        "hormone it contains. It prevents ovulation and thickens mucus in the cervix which"
-        "prevents fertilization.\n"
-        "However, it must be used after consulting the doctor and requires trained staff."
+       <b><u>Contraceptive Injection.</u></b>\n
+       This is used by women who do not want to give birth for a long time. Just a single dose
+       of contraceptive injection can prevent pregnancy for 3 months.\n
+       The contraceptive injection is commonly known as DEPO based on the type of progesterone
+       hormone it contains. It prevents ovulation and thickens mucus in the cervix which
+       prevents fertilization.\n
+       However, it must be used after consulting the doctor and requires trained staff.
     </string>
 
     <string name="oral_contraceptives">
-        "<b><u>Oral Contraceptive pills.</u></b>\n"
-        "These are pills that are taken by females through the"
-        "mouth. It doesn’t prevent HIV or STIs! There are two types of oral contraceptive pills;\n"
-        "Combined oral contraceptive pills. Most commonly used type. Contains two hormones called"
-        "estrogen and progesterone. It prevents ovulation and thickens mucus in the cervix"
-        "which prevents fertilization.\n"
-        "Minipill or Progesterone pill. This contains only one hormone called the progesterone and"
-        "is suitable for mothers who are breast feeding.\n"
+       <b><u>Oral Contraceptive pills.</u></b>\n
+       These are pills that are taken by females through the
+       mouth. It doesn’t prevent HIV or STIs! There are two types of oral contraceptive pills;\n
+       Combined oral contraceptive pills. Most commonly used type. Contains two hormones called
+       estrogen and progesterone. It prevents ovulation and thickens mucus in the cervix
+       which prevents fertilization.\n
+       Minipill or Progesterone pill. This contains only one hormone called the progesterone and
+       is suitable for mothers who are breast feeding.\n
     </string>
 
     <string name="condom">
-        "<b><u>Condom</u>.</b>\n"
-        "This is a commonly used method of contraception, acts as a barrier between"
-        "the genitalia, prevents exchange of body fluids and entry of sperm into the"
-        "vagina during sexual intercourse.\n"
-        "It can prevent pregnancy, HIV and other STIs when used consistently and correctly for"
-        "each and every sexual intercourse.\n"
+       <b><u>Condom</u>.</b>\n
+       This is a commonly used method of contraception, acts as a barrier between
+       the genitalia, prevents exchange of body fluids and entry of sperm into the
+       vagina during sexual intercourse.\n
+       It can prevent pregnancy, HIV and other STIs when used consistently and correctly for
+       each and every sexual intercourse.\n
     </string>
 
     <string name="temporary_contraceptives">
-        "<b><u>Temporary modern contraceptives.</u></b>\n"
-        "Temporary modern contraceptives. These are devices that can prevent pregnancy temporarily."
-        "It could be effective for one episode of sexual intercourse, a month, 3 months, 5 years"
-        "or even 12 years depending on the type of contraceptive used.\n"
-        "These methods are effective only if used correctly and are reversible in case"
-        "one wants to get pregnant. These include;\n"
+       <b><u>Temporary modern contraceptives.</u></b>\n
+       Temporary modern contraceptives. These are devices that can prevent pregnancy temporarily.
+       It could be effective for one episode of sexual intercourse, a month, 3 months, 5 years
+       or even 12 years depending on the type of contraceptive used.\n
+       These methods are effective only if used correctly and are reversible in case
+       one wants to get pregnant. These include;\n
     </string>
 
     <string name="tubal_ligtion_details">
-        "<b><u>Tubal Ligagtion</u></b>\n"
-        "This is a surgical procedure done in women, where the fallopian tubes are either tied or"
-        "cut, so the ovum does not meet the sperm for fertilization.\n"
+       <b><u>Tubal Ligagtion</u></b>\n
+       This is a surgical procedure done in women, where the fallopian tubes are either tied or
+       cut, so the ovum does not meet the sperm for fertilization.\n
     </string>
 
     <string name="vasectomy_details">
-        "<b>Vasectomy.</b>\n"
-        "This is a major surgery done in men where the vas deferens are tied"
-        "or cut. A man who had vasectomy will still have ejaculation but the ejaculated semen"
-        "will not mix with the sperms thus prevent fertilization.\n"
-        "However, after vasectomy, it is advised for men to have protected sex for a period of"
-        "6 months because the man will still ejaculate sperm in that period which may cause"
-        "unwanted pregnancies.\n"
+       <b>Vasectomy.</b>\n
+       This is a major surgery done in men where the vas deferens are tied
+       or cut. A man who had vasectomy will still have ejaculation but the ejaculated semen
+       will not mix with the sperms thus prevent fertilization.\n
+       However, after vasectomy, it is advised for men to have protected sex for a period of
+       6 months because the man will still ejaculate sperm in that period which may cause
+       unwanted pregnancies.\n
     </string>
 
     <string name="permanent_details">
-        "<b><u>Permanent Methods.</u></b>\n"
-        "These are methods that forever prevent pregnancy and is a choice of couples who never"
-        "want to have children ever again."
+       <b><u>Permanent Methods.</u></b>\n
+       These are methods that forever prevent pregnancy and is a choice of couples who never
+       want to have children ever again.
     </string>
 
     <string name="emergency_details">
-        <b><u>Emergence contraceptives.</u></b>\n"
-        "Sometimes, one could forget to use other contraceptives before having sex and other cases,"
-        "the condom may slip off or tear. In these cases, unprotected sex could increase the risk"
-        "of unwanted pregnancy.\n"
-        "There are methods that can be used within a certain duration after unprotected sexual"
-        "intercourse that can prevent pregnancy. However, these methods do not prevent"
-        "HIV/STIs. These include;\n"
-        "•	Contraceptive pills\n"
-        "•	IUDs
+        <b><u>Emergence contraceptives.</u></b>\n
+       Sometimes, one could forget to use other contraceptives before having sex and other cases,
+       the condom may slip off or tear. In these cases, unprotected sex could increase the risk
+       of unwanted pregnancy.\n
+       There are methods that can be used within a certain duration after unprotected sexual
+       intercourse that can prevent pregnancy. However, these methods do not prevent
+       HIV/STIs. These include;\n
+       •	Contraceptive pills\n
+       •	IUDs
     </string>
 
     <string name="IUD_details">
-        "<b><u>IUD</u></b>\n"
-        "It is effective for 12 years and is used by women who do not want to give birth for"
-        "a long period. There are various types of IUDs and the most common one is copper-T.\n"
-        "However, it requires a trained health worker, and can be accessed from"
-        "a health facility.\n"
+       <b><u>IUD</u></b>\n
+       It is effective for 12 years and is used by women who do not want to give birth for
+       a long period. There are various types of IUDs and the most common one is copper-T.\n
+       However, it requires a trained health worker, and can be accessed from
+       a health facility.\n
     </string>
 
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="section_format">Hello World from section:</string>
     <string name="psyco_details">psycholoical details</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="female_hormones_btn">Female hormones</string>
+    <string name="psyco_identity_details">IDENTITY</string>
+    <string name="psyco_sadness_and_depression_details">SADNESS AND DEPRESSION</string>
+    <string name="psyco_sucidal_thoughts_details">SUCIDAL THOUGHTS</string>
+    <string name="psyco_substance_abuse_details">SUBSTANCE ABUSE</string>
+    <string name="psyco_eating_problems_details">EATING PROBLEMS</string>
+    <string name="psyco_anger_and_aggression_details">ANGER AND AGGRESSION</string>
+    <string name="psyco_self_esteem_details">ANGER AND SELF ESTEEM</string>
+    <string name="psyco_body_image_details">BODY IMAGE</string>
 
 
 </resources>

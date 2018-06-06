@@ -38,7 +38,11 @@
 
     <style name="button_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/dim90</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginTop">@dimen/dim8</item>
+        <item name="android:textSize">100sp</item>
     </style>
 
     <style name="imageview_style">
@@ -47,4 +51,6 @@
     </style>
 
 
+    <dimen name="dim100">100dp</dimen>
+    <dimen name="dim90">90</dimen>
 </resources>

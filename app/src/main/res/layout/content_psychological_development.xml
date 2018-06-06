@@ -27,6 +27,31 @@
             <TextView
                 style="@style/TextView"
                 android:text="@string/psyco_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_identity_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_sadness_and_depression_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_sucidal_thoughts_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_substance_abuse_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_eating_problems_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_anger_and_aggression_details"/>
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_self_esteem_details"/>
+            <TextView
+                style="@style/TextView"
+                android:text="@string/psyco_body_image_details"/>
 
 
         </LinearLayout>
