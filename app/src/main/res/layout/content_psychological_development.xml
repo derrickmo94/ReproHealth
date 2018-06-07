@@ -53,7 +53,6 @@
                 style="@style/TextView"
                 android:text="@string/psyco_body_image_details"/>
 
-
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
