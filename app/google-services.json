@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "97953709177",
+    "firebase_url": "https://reprohealth-b1d87.firebaseio.com",
+    "project_id": "reprohealth-b1d87",
+    "storage_bucket": "reprohealth-b1d87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97953709177:android:85bf897b397f65f5",
+        "android_client_info": {
+          "package_name": "com.example.hericxon.reprohealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97953709177-o54sjcsn2nqli2bijrrslsv8k5ju9vfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hericxon.reprohealth",
+            "certificate_hash": "a3e123837c0a974e7a24d5d3478251533342c1d8"
+          }
+        },
+        {
+          "client_id": "97953709177-klatdkivbrpum0alripf9kvhb1uckpf0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "97953709177-klatdkivbrpum0alripf9kvhb1uckpf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwJy1IwB7nnbMMEwj5hpgR9U1klTkc9VM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97953709177-klatdkivbrpum0alripf9kvhb1uckpf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
