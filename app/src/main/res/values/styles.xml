@@ -38,11 +38,11 @@
 
     <style name="button_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/dim90</item>
+        <item name="android:layout_height">@dimen/dim75</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:layout_marginTop">@dimen/dim8</item>
-        <item name="android:textSize">100sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="imageview_style">
@@ -64,7 +64,7 @@
         <item name="android:textColorHint">@color/iron</item>
 
         <item name="colorButtonNormal">@color/primary_darker</item>
-        <item name="android:colorButtonNormal">@color/primary_darker</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/primary_darker</item>
     </style>
 
     <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
