@@ -20,6 +20,7 @@
     <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="dim5">5dp</dimen>
     <dimen name="dim4">4dp</dimen>
+    <dimen name="dim75">75dp</dimen>
 
     //firebase dimen
     <!-- Default screen margins, per the Android Design guidelines. -->
