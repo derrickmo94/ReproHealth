@@ -1,5 +1,6 @@
 package com.example.hericxon.reprohealth.user;
 
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hericxon.reprohealth.R;
+import com.example.hericxon.reprohealth.home.MainMenu;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,6 +26,7 @@ import butterknife.ButterKnife;
     public class LoginActivity extends AppCompatActivity {
         private static final String TAG = "LoginActivity";
         private static final int REQUEST_SIGNUP = 0;
+        UserDb userdb;
 
         @BindView(R.id.input_email) EditText _emailText;
         @BindView(R.id.input_password) EditText _passwordText;
@@ -63,50 +66,61 @@ import butterknife.ButterKnife;
             if (!validate()) {
                 onLoginFailed();
                 return;
+            } else {
+
+                _loginButton.setEnabled(false);
+
+                final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
+                        R.style.AppTheme_Dark_Dialog);
+                progressDialog.setIndeterminate(true);
+                progressDialog.setMessage("Authenticating...");
+                progressDialog.show();
+
+                String email = _emailText.getText().toString();
+                String password = _passwordText.getText().toString();
+
+                // TODO: Implement your own authentication logic here.
+                userdb = new UserDb(this);
+                final Cursor validuser = userdb.getUser(password, email);
+
+                new android.os.Handler().postDelayed(
+                        new Runnable() {
+                            public void run() {
+                                // On complete call either onLoginSuccess or onLoginFailed
+                                if (validuser.getCount() <= 0) {
+                                    onLoginFailed();
+                                    progressDialog.dismiss();
+
+                                } else {
+                                    onLoginSuccess();
+                                    progressDialog.dismiss();
+                                    Intent login = new Intent(LoginActivity.this, MainMenu.class);
+                                    startActivity(login);
+
+                                }
+                            }
+                        }, 3000);
+            }
             }
 
-            _loginButton.setEnabled(false);
 
-            final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
-                    R.style.AppTheme_Dark_Dialog);
-            progressDialog.setIndeterminate(true);
-            progressDialog.setMessage("Authenticating...");
-            progressDialog.show();
+            @Override
+            protected void onActivityResult ( int requestCode, int resultCode, Intent data){
+                if (requestCode == REQUEST_SIGNUP) {
+                    if (resultCode == RESULT_OK) {
 
-            String email = _emailText.getText().toString();
-            String password = _passwordText.getText().toString();
-
-            // TODO: Implement your own authentication logic here.
-
-            new android.os.Handler().postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            // On complete call either onLoginSuccess or onLoginFailed
-                            onLoginSuccess();
-                            // onLoginFailed();
-                            progressDialog.dismiss();
-                        }
-                    }, 3000);
-        }
-
-
-        @Override
-        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-            if (requestCode == REQUEST_SIGNUP) {
-                if (resultCode == RESULT_OK) {
-
-                    // TODO: Implement successful signup logic here
-                    // By default we just finish the Activity and log them in automatically
-                    this.finish();
+                        // TODO: Implement successful signup logic here
+                        // By default we just finish the Activity and log them in automatically
+                        this.finish();
+                    }
                 }
             }
-        }
 
-        @Override
-        public void onBackPressed() {
-            // Disable going back to the MainActivity
-            moveTaskToBack(true);
-        }
+            @Override
+            public void onBackPressed () {
+                // Disable going back to the MainActivity
+                moveTaskToBack(true);
+            }
 
         public void onLoginSuccess() {
             _loginButton.setEnabled(true);
@@ -140,5 +154,6 @@ import butterknife.ButterKnife;
             }
 
             return valid;
+
         }
     }

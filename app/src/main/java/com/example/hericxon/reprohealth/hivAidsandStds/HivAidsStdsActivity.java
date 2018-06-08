@@ -38,12 +38,13 @@ public class HivAidsStdsActivity extends AppCompatActivity implements Navigation
         setContentView(R.layout.activity_hiv_aids_stds);
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        tablayouts =(TabLayout)findViewById(R.id.tablayout);
-        viewPagers = (ViewPager)findViewById(R.id.viewpager);
+
+        tablayouts = findViewById(R.id.tablayout);
+        viewPagers = findViewById(R.id.viewpager);
 
         TabsPager tabsPagers = new TabsPager(getSupportFragmentManager());
         viewPagers.setAdapter(tabsPagers);
-       //tablayouts.setupWithViewPager(viewPagers);
+       tablayouts.setupWithViewPager(viewPagers);
 
 
         drawer =  findViewById(R.id.drawer_layout);

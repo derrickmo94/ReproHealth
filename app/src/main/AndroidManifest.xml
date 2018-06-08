@@ -18,13 +18,7 @@
         <activity
             android:name=".home.MainMenu"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".user.UserActivity"
             android:label="@string/title_activity_user"
@@ -118,8 +112,14 @@
         <activity android:name=".familyPlanning.Permanentmethods" />
         <activity android:name=".familyPlanning.EmergencyMethods" />
 
-        <!--<activity android:name=".user.LoginActivity"/>
-        <activity android:name=".user.SignupActivity"/>-->
+        <activity android:name=".user.LoginActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".user.SignupActivity"/>
     </application>
 
 </manifest>

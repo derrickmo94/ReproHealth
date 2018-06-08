@@ -19,63 +19,67 @@ public class UserDb  extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String query = "create table logins (userId Integer primary key autoincrement, "+
-                " username text, password text)";
-        sqLiteDatabase.execSQL(query);
+    public void onCreate(SQLiteDatabase database) {
+        String query = "create table logins" + "(userId Integer primary key autoincrement," +
+                "username text, useraddress text,useremail text, userphone text, userpassword text)";
+        database.execSQL(query);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+    public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
         try{
             System.out.println("UPGRADE DB oldVersion="+oldVersion+" - newVersion="+newVersion);
-            onCreate(sqLiteDatabase);
-            if (oldVersion<10){
-                String query = "create table logins (userId Integer primary key autoincrement, "+
-                        " username text, password text)";
-                sqLiteDatabase.execSQL(query);
-            }
+        database.execSQL("drop table if exists logins");
+        onCreate(database);
         }
         catch (Exception e){e.printStackTrace();}
     }
 
-    @Override
-    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // super.onDowngrade(db, oldVersion, newVersion);
-        System.out.println("DOWNGRADE DB oldVersion="+oldVersion+" - newVersion="+newVersion);
-    }
-
-    public UserCredentials insertUser (UserCredentials queryValues){
+    public boolean insertUser (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword ){
+        boolean valid = true;
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("username", queryValues.username);
-        values.put("password", queryValues.password);
-        queryValues.userId=database.insert("logins", null, values);
-        database.close();
-        return queryValues;
+        values.put("username",UserName);
+        values.put("useraddress", UserAddress);
+        values.put("useremail", UserEmail);
+        values.put("userphone", UserPhone);
+        values.put("userpassword",UserPassword);
+        long results = database.insert("logins", null, values);
+        if(results != -1 ){
+            database.close();
+            valid =   true;
+        }else{
+            valid =false;
+        }
+        return valid;
     }
 
-    public int updateUserPassword (UserCredentials queryValues){
+    public int updateLogins (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword){
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("username", queryValues.username);
-        values.put("password", queryValues.password);
-        queryValues.userId=database.insert("logins", null, values);
-        database.close();
-        return database.update("logins", values, "userId = ?", new String[] {String.valueOf(queryValues.userId)});
+        values.put("username",UserName);
+        values.put("useraddress", UserAddress);
+        values.put("useremail", UserEmail);
+        values.put("userphone", UserPhone);
+        values.put("userpassword",UserPassword);
+        database.insert("logins", null, values);
+        return database.update("logins", values, "useremail = ?", new String[] {String.valueOf(UserEmail)});
     }
 
-    public UserCredentials getUser (String username){
-        String query = "Select userId, password from logins where username ='"+username+"'";
-        UserCredentials myUser = new UserCredentials(0,username,"");
+    public Cursor getUser (String UserPassword, String UserEmail){
+        //boolean valid =true;
+        String query = "Select * from logins where userpassword ='"+UserPassword+"'and username= '"+UserEmail+"'";
+        //UserCredentials myUser = new UserCredentials(0,username,"");
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor cursor = database.rawQuery(query, null);
-        if (cursor.moveToFirst()){
-            do {
-                myUser.userId=cursor.getLong(0);
-                myUser.password=cursor.getString(1);
-            } while (cursor.moveToNext());
-        }
-        return myUser;
+
+       /* if(cursor.getCount()<=0){
+            database.close();
+            valid = false;
+        } else{
+            database.close();
+            valid= true;
+        }*/
+        return cursor;
     }
 }
