@@ -1,5 +1,6 @@
 package com.example.hericxon.reprohealth.user;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -23,6 +24,7 @@ public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
 
     UserDb userdb;
+    //SQLiteDatabase df;
     Button signupButton;
     EditText nameText,addressText,emailText,passwordText,mobileText,reEnterPasswordText;
     TextView loginLink;

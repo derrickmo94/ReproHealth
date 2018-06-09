@@ -13,14 +13,15 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class UserDb  extends SQLiteOpenHelper {
 
     private final static int    DB_VERSION = 10;
+    public static final String DATABASE_NAME = "myApp.db";
 
     public UserDb(Context context) {
-        super(context, "myApp.db", null,DB_VERSION);
+        super(context, DATABASE_NAME, null,DB_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String query = "create table logins" + "(userId Integer primary key autoincrement," +
+        String query = "create table logins (userId Integer primary key autoincrement," +
                 "username text, useraddress text,useremail text, userphone text, userpassword text)";
         database.execSQL(query);
     }
@@ -29,14 +30,16 @@ public class UserDb  extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
         try{
             System.out.println("UPGRADE DB oldVersion="+oldVersion+" - newVersion="+newVersion);
-        database.execSQL("drop table if exists logins");
+        database.execSQL("DROP TABLE IF EXISTS logins");
         onCreate(database);
         }
-        catch (Exception e){e.printStackTrace();}
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public boolean insertUser (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword ){
-        boolean valid = true;
+        boolean valid;
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("username",UserName);
@@ -46,8 +49,8 @@ public class UserDb  extends SQLiteOpenHelper {
         values.put("userpassword",UserPassword);
         long results = database.insert("logins", null, values);
         if(results != -1 ){
-            database.close();
             valid =   true;
+            database.close();
         }else{
             valid =false;
         }
@@ -71,7 +74,6 @@ public class UserDb  extends SQLiteOpenHelper {
         String query = "Select * from logins where userpassword ='"+UserPassword+"'and username= '"+UserEmail+"'";
         //UserCredentials myUser = new UserCredentials(0,username,"");
         SQLiteDatabase database = this.getReadableDatabase();
-        Cursor cursor = database.rawQuery(query, null);
 
        /* if(cursor.getCount()<=0){
             database.close();
@@ -80,6 +82,6 @@ public class UserDb  extends SQLiteOpenHelper {
             database.close();
             valid= true;
         }*/
-        return cursor;
+        return database.rawQuery(query, null);
     }
 }
