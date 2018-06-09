@@ -89,16 +89,16 @@ public class SignupActivity extends AppCompatActivity {
         progressDialog.setMessage("Creating Account...");
         progressDialog.show();
 
-        String name = nameText.getText().toString();
-        String address = addressText.getText().toString();
-        String email = emailText.getText().toString();
-        String mobile = mobileText.getText().toString();
-        String password = passwordText.getText().toString();
-        String reEnterPassword = reEnterPasswordText.getText().toString();
+        final String name = nameText.getText().toString().trim();
+        final String address = addressText.getText().toString().trim();
+        final String email = emailText.getText().toString().trim();
+        final String mobile = mobileText.getText().toString().trim();
+        final String password = passwordText.getText().toString().trim();
+        //String reEnterPassword = reEnterPasswordText.getText().toString();
 
         // TODO: Implement your own signup logic here.
         userdb = new UserDb(this);
-       final boolean results = userdb.insertUser(name,address,email,mobile,password);
+       final long results = userdb.insertUser(name,address,email,mobile,password);
 
 
         new android.os.Handler().postDelayed(
@@ -112,7 +112,7 @@ public class SignupActivity extends AppCompatActivity {
 
                             //onSignupFailed();
 
-                        if(results == true){
+                        if(results > -1){
                             onSignupSuccess();
                             progressDialog.dismiss();
 
@@ -128,12 +128,17 @@ public class SignupActivity extends AppCompatActivity {
 
     public void onSignupSuccess() {
         signupButton.setEnabled(true);
+        Toast.makeText(this,"Successfully signed up",Toast.LENGTH_SHORT).show();
         setResult(RESULT_OK, null);
+        Intent login = new Intent(this,LoginActivity.class);
+        startActivity(login);
+    }
+    public void onSignupsccess2(){
         Toast.makeText(this,"Sucessfully signed up",Toast.LENGTH_SHORT).show();
     }
 
     public void onSignupFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Registration failed", Toast.LENGTH_LONG).show();
 
         signupButton.setEnabled(true);
     }

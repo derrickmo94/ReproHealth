@@ -30,16 +30,15 @@ public class UserDb  extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
         try{
             System.out.println("UPGRADE DB oldVersion="+oldVersion+" - newVersion="+newVersion);
-        database.execSQL("DROP TABLE IF EXISTS logins");
-        onCreate(database);
+            database.execSQL("DROP TABLE IF EXISTS logins");
+            onCreate(database);
         }
         catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public boolean insertUser (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword ){
-        boolean valid;
+    public long insertUser (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword ){
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("username",UserName);
@@ -47,14 +46,9 @@ public class UserDb  extends SQLiteOpenHelper {
         values.put("useremail", UserEmail);
         values.put("userphone", UserPhone);
         values.put("userpassword",UserPassword);
-        long results = database.insert("logins", null, values);
-        if(results != -1 ){
-            valid =   true;
-            database.close();
-        }else{
-            valid =false;
-        }
-        return valid;
+        long resultid = database.insert("logins", null, values);
+
+        return resultid;
     }
 
     public int updateLogins (String UserName, String UserAddress,String UserEmail, String UserPhone, String UserPassword){
@@ -70,18 +64,9 @@ public class UserDb  extends SQLiteOpenHelper {
     }
 
     public Cursor getUser (String UserPassword, String UserEmail){
-        //boolean valid =true;
-        String query = "Select * from logins where userpassword ='"+UserPassword+"'and username= '"+UserEmail+"'";
-        //UserCredentials myUser = new UserCredentials(0,username,"");
+        String query = "Select * from logins where userpassword ='"+UserPassword+"'and useremail= '"+UserEmail+"'";
         SQLiteDatabase database = this.getReadableDatabase();
 
-       /* if(cursor.getCount()<=0){
-            database.close();
-            valid = false;
-        } else{
-            database.close();
-            valid= true;
-        }*/
         return database.rawQuery(query, null);
     }
 }

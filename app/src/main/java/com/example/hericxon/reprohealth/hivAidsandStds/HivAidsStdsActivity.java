@@ -42,9 +42,8 @@ public class HivAidsStdsActivity extends AppCompatActivity implements Navigation
         tablayouts = findViewById(R.id.tablayout);
         viewPagers = findViewById(R.id.viewpager);
 
-        TabsPager tabsPagers = new TabsPager(getSupportFragmentManager());
-        viewPagers.setAdapter(tabsPagers);
-       tablayouts.setupWithViewPager(viewPagers);
+        setupViewPager(viewPagers);
+        tablayouts.setupWithViewPager(viewPagers);
 
 
         drawer =  findViewById(R.id.drawer_layout);
@@ -54,6 +53,14 @@ public class HivAidsStdsActivity extends AppCompatActivity implements Navigation
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private  void setupViewPager(ViewPager viewPagers){
+        TabsPagerAdapter adapter = new TabsPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new HivAidsFragment(),"HIV/AIDs");
+
+        adapter.addFragment(new StdsFragment(),"STDs/STIs");
+        viewPagers.setAdapter(adapter);
     }
 
     @Override

@@ -1,14 +1,46 @@
-<FrameLayout
+<LinearLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="105dp"
     tools:context="com.example.hericxon.reprohealth.hivAidsandStds.StdsFragment">
 
-    <TextView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="STDS"
-        android:gravity="center"/>
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview"/>
+            <Button
+                android:id="@+id/sti_btn"
+                style="@style/button_style"
+                android:text="@string/sti_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/sti_types_btn"
+                style="@style/button_style"
+                android:text="@string/sti_types_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/sti_myth_btn"
+                style="@style/button_style"
+                android:text="@string/sti_myth_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,14 +1,80 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="465dp"
+    android:layout_marginTop="105dp"
     tools:context="com.example.hericxon.reprohealth.hivAidsandStds.HivAidsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HIV/AIDS"
-        android:gravity="center"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</FrameLayout>
+            <ImageView
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview"/>
+            <Button
+                android:id="@+id/hiv_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_transimission_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_transimission_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_risks_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_risks_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_symptoms_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_symptoms_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_immune_attack_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_immune_attack_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_prevention_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_prevention_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_treatment_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_treatment_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_management_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_management_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+            <Button
+                android:id="@+id/hiv_myths_btn"
+                style="@style/button_style"
+                android:text="@string/hiv_myths_btn"
+                android:drawableLeft="@mipmap/ic_male_round"
+                android:drawableStart="@mipmap/ic_male_round" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

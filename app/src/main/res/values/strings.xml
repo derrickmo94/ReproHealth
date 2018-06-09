@@ -1270,6 +1270,65 @@
     <string name="title_activity_login2">Sign in</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="sti_btn">What is STI</string>
+    <string name="sti_types_btn">TYPES OF STIs</string>
+    <string name="sti_myth_btn">Nyths about STIs</string>
+    <string name="hiv_btn">What is HIV</string>
+    <string name="hiv_transimission_btn">How HIV is Transmitted</string>
+    <string name="hiv_risks_btn">HIV/AIDS risks</string>
+    <string name="hiv_symptoms_btn">Symptoms of HIV infection</string>
+    <string name="hiv_immune_attack_btn">How hiv affects the immune system</string>
+    <string name="hiv_prevention_btn">Hiv prevention</string>
+    <string name="hiv_treatment_btn">Hiv treatment</string>
+    <string name="hiv_management_btn">Leaving with Hiv</string>
+    <string name="hiv_myths_btn">HIV/AIDS  myth</string>
 
+    <!-- TODO: start editing all the content below -->
+    <!-- TODO: Edavour to underline and bold all top level titles(titles that are on top of each text containers) -->
+    <!-- TODO: Captalise all top level heading titles() -->
+    <!-- TODO: bold and bullet all subtitles(titles that share the same text container with a top level title) -->
+    <!-- TODO: Bullets to be used should be obtained by pressing alt key followed by 0149 from the keypad without releasing the alt key-->
+
+    <string name="hiv_description_details">WHAT  IS HIV?</string>
+
+    <string name="hiv_transimission_brief_details">HIV TRANSIMISSION IN BRIEF</string>
+
+    <string name="hiv_transmission_mode_details">Modes of HIV transmission</string>
+
+    <string name="aids_description_details">WHAT IS AIDS?</string>
+
+    <string name="hiv_risks_details">What puts you at risk of HIV</string>
+
+    <string name="hiv_symptoms_details">Symptoms of HIV infection</string>
+
+    <string name="hiv_immune_attack_details">How HIV attacks the immune system</string>
+
+    <string name="hiv_prevention_details">How to prevent HIV infection</string>
+
+    <string name="hiv_treatable_details">Is  HIV treatable</string>
+
+    <string name="living_with_hiv_details">Living with HIV</string>
+
+    <string name="hiv_myth_details">MYTHS ABOUT HIV/AIDS</string>
+
+    <string name="sti_description_details">STI description</string>
+
+    <string name="sti_syphillis_details">SYPHILLIS</string>
+
+    <string name="sti_gonorrhea_details">GONORHEA</string>
+
+    <string name="sti_chlamydia_details">CHLAMYDIA</string>
+
+    <string name="sti_genital_warts_details">GENITAL WARTS</string>
+
+    <string name="sti_genital_herpes_details">GENITAL HERPES</string>
+
+    <string name="sti_trichomoniasis_details">TRICHOMONIASIS</string>
+
+    <string name="sti_hepatitis_B_details">HEPATITIS B</string>
+
+    <string name="sti_myth_details">MYTHS ABOUT STIs</string>
+
+    <!-- TODO: THIS IS THE END OF YOUR TASKS THNKS -->
 
 </resources>

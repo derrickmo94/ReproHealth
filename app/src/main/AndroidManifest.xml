@@ -18,7 +18,7 @@
         <activity
             android:name=".home.MainMenu"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".user.UserActivity"
             android:label="@string/title_activity_user"
@@ -111,15 +111,26 @@
         <activity android:name=".familyPlanning.Temporarymethods" />
         <activity android:name=".familyPlanning.Permanentmethods" />
         <activity android:name=".familyPlanning.EmergencyMethods" />
-
         <activity android:name=".user.LoginActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".user.SignupActivity"/>
+        <activity android:name=".user.SignupActivity" />
+        <activity android:name=".hivAidsandStds.HivMyth" />
+        <activity android:name=".hivAidsandStds.HivAids" />
+        <activity android:name=".hivAidsandStds.HivImmuneAttack" />
+        <activity android:name=".hivAidsandStds.HivManagement" />
+        <activity android:name=".hivAidsandStds.HivPrevention" />
+        <activity android:name=".hivAidsandStds.HivRisks" />
+        <activity android:name=".hivAidsandStds.HivSymptoms" />
+        <activity android:name=".hivAidsandStds.HivTransmission" />
+        <activity android:name=".hivAidsandStds.HivTreatable" />
+        <activity android:name=".hivAidsandStds.StiStd" />
+        <activity android:name=".hivAidsandStds.StiStdMyth" />
+        <activity android:name=".hivAidsandStds.StiStdTypes"></activity>
     </application>
 
 </manifest>

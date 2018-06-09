@@ -34,5 +34,4 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.1.0'
 }
 
-
 //apply plugin: 'com.google.gms.google-services'
