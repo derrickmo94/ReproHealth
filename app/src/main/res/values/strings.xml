@@ -1289,45 +1289,274 @@
     <!-- TODO: bold and bullet all subtitles(titles that share the same text container with a top level title) -->
     <!-- TODO: Bullets to be used should be obtained by pressing alt key followed by 0149 from the keypad without releasing the alt key-->
 
-    <string name="hiv_description_details">WHAT  IS HIV?</string>
+    <string name="hiv_description_details">
+        <b><u>WHAT  IS HIV?</u></b>\n
+        HIV stands for Human Immunodeficiency Virus. It is a virus that can attack our immune
+        system(ability to fight against diseases).\n\n
+        As a result the person becomes weak and can get sick all the time,mostly with severe
+        infections.
+    </string>
 
-    <string name="hiv_transimission_brief_details">HIV TRANSIMISSION IN BRIEF</string>
+    <string name="hiv_transimission_brief_details">
+        <b><u>HIV TRANSIMISSION IN BRIEF</u></b>\n
+        HIV is transmitted by exchange of certain body fluids like blood,semen,pre-seminal
+        fluid,rectal fluids,vaginal fluid and breast milk.\n\n
+        It is not transmitted through saliva,sweat and urine.
+       
+    </string>
 
-    <string name="hiv_transmission_mode_details">Modes of HIV transmission</string>
+    <string name="hiv_transmission_mode_details">
+        <b><u>Modes of HIV transmission</u></b>\n
+        • HIV can be transmitted by unprotected sexual contact (vaginal sex,anal sex and
+        oral sex)\n\n
+        • Through blood, like sharing the used needles pf an HIV infected person\n\n
+        • Blood transfusion or organ transplant of an infected person\n\n
+        • Through mother to her child during pregnancy,childbirth or breastfeeding
+    </string>
 
-    <string name="aids_description_details">WHAT IS AIDS?</string>
+    <string name="aids_description_details">
+        <b><u>WHAT IS AIDS?</u></b>\n
+        AIDS stands for Acquired Immune Deficiency Syndrome. If HIV infection is left
+        untreated,it can lead to a wide range of serious health problems called AIDS.
+        It is the advanced stage of HIV infection.\n\n
+        The immune system becomes very weak and the person may acquire infections like
+        tuberculosis,pneumonia,oral thrush,fungal infections etc. Some people may also
+        have cancer.\n\n
+        In worse conditions,the infection or cancer can be so severe that it becomes
+        difficult to treat and can lead to death.
+    </string>
 
-    <string name="hiv_risks_details">What puts you at risk of HIV</string>
+    <string name="hiv_risks_details">
+        <b><u>What puts you at risk of HIV</u></b>\n
+        HIV infection is preventable.But we must remember that all of us are at equal 
+        risk if we are not careful enough.\n\n
+        • Unprotected vaginal,oral or anal sex (without using condoms) with your 
+        sexual partner without knowing their HIV status puts you at risk. Even one
+        episode of unprotected sex can lead to HIV infection. That is why it is
+        important to use condoms correctly and consistently.\n\n
+        • Exchanging used needles,such as sharing and injecting drug puts you at
+        risk.\n\n
+        • Pricks from the used needles such as in health workers puts you at risk.\n\n
+        • The baby inside the womb or recently born of a mother who is already infected
+        with HIV puts the baby at risk.
+        
+    </string>
 
-    <string name="hiv_symptoms_details">Symptoms of HIV infection</string>
+    <string name="hiv_symptoms_details">
+        <b><u>Symptoms of HIV infection</u></b>\n
+        The symptoms of HIV may vary from person to person.\n\n
+        Common early symptoms of HIV are more flu like. A person may have fever,headache,
+        tiredness and enlarged lymph nodes.\n\n
+        Some may have more severe symptoms like diarrhea and vomiting.\n\n
+        Some may not have any symptoms at all for as long as 10-15years.\n\n
+        The only way to diagnose HIV is through HIV specific blood test.
+        
+    </string>
 
-    <string name="hiv_immune_attack_details">How HIV attacks the immune system</string>
+    <string name="hiv_immune_attack_details">
+        <b><u>How HIV attacks the immune system</u></b>\n
+        HIV virus kills a specific type of immune cells called CD4+ cells in 
+        our body.\n\n
+        When these cells are destroyed,our body loses its ability to fight even
+        the mildest forms of infections.\n\n
+        Many organisms that do not normally attack a healthy person starts getting
+        the opportunity to infect a person whose CD4+ cells are very less.\n
+        These kind of infections are called opportunisic infections.
+    </string>
 
-    <string name="hiv_prevention_details">How to prevent HIV infection</string>
+    <string name="hiv_prevention_details">
+        <b><b>How to prevent HIV infection</u></b>\n
+        • <b>Correct and consistent condom use:</b>For sexual intercourse, the 
+        only way to prevent HIV is through correct and consistent use of 
+        condom.\n\n
+        Even one episode of unprotected sexual intercourse can lead to HIV infection.\n\n
+        • <b>Pre-exposure medicines:</b>There are a group of medicines recommended 
+        for people who are constantly at high risk of getting HIV infections.
+        These only reduce the chances of infection and do not entirely prevent
+        HIV infection.\n\n
+        • <b>Prevention of  mother to child transmission:</b>A pregnant mother
+        can transmit HIV infection to her baby.That is why all pregnant mothers are 
+        tested for HIV in health centers.The best way to prevent HIV transmission 
+        is through regular follow up with the doctors during pregnancy and 
+        regular use of antiretroviral medicines for those who are infected.
+        
+        
+    </string>
 
-    <string name="hiv_treatable_details">Is  HIV treatable</string>
+    <string name="hiv_treatable_details">
+        <b><u>Is  HIV treatable</u></b>\n
+        HIV infection is not curable. But there are medicines that help to
+        slow down the multiplication(replication)of HIV viruses within ones body.\n\n
+        These medicines are called anti-retroviral drugs(ARVs) and the treatment 
+        process is called antiretorviral therapy(ART).\n\n
+        Someone infected with HIV must take ARV everyday throughout their 
+        lifetime.\n\n
+        A pregnant mother infected with HIV can prevent the transmission to her
+        baby,if she takes ARV regularly throughout her pregnancy with 
+        proper medical supervision.\n\n
+        ARV is provided free of cost at identified health centers.
+    </string>
 
-    <string name="living_with_hiv_details">Living with HIV</string>
+    <string name="living_with_hiv_details">
+        <b><u>Living with HIV</u></b>\n
+        Thanks to Antiretroviral medicines,people living with HIV can now live
+        a normal and healthy life,finish education and have a good job. Butit 
+        is important to take ARVs regularly.\n\n
+        Any person living with HIV has the same rights as anybody else.It doesnt
+        make a person less capable in any way. So if you are living with HIV you
+        must overcome your own fear and know your rights to live a normal
+        and dignified life.
+  
+    </string>
 
-    <string name="hiv_myth_details">MYTHS ABOUT HIV/AIDS</string>
+    <string name="hiv_myth_details">
+        <b><u>MYTHS ABOUT HIV/AIDS</u></b>\n
+        • <b>Once a person contracts HIV,it is the dead end of his or her life</b>\n\n
+        No,a person infected with HIV can live a normal and healthy life,
+        as long as they take antiretroviral medicines regularly and carefully.\n\n
+        • <b>A person contracting HIV is always someone with a bad character.</b>\n
+        No,we all have equal risk of getting HIV transmission if we are not 
+        careful enough.Contracting HIV doesnt make someone good or bad.It is
+        an infection not a judge of character.\n\n
+        • <b>You should always stay away form people living with HIV and never
+        get friendly with them.</b>\n\n
+        No,HIV status should not be the reason to stay away from anyone.HIV is
+        transmitted only through unprotected sexual contact and through blood.
+        Being friendly with someone,shaking hands,kissing or hugging,sharing a
+        toilet or toilet seats do not spread HIV infections.\n\n
+        • <b>People living with HIV should never marry or have sex ever again</b>\n\n
+        N,a person living with HIV has equal rights to marry and have a normal
+        healthy relationship, as long as the person is taking antiretroviral
+        medicines regularly,doesnt pose a risk of HIV status. It is always
+        recommended to use consistent and correct use of condoms for sexual
+        intercourse. Also the partner may also have to take antiretroviral medicines 
+        for prevention. Intake of antiretroviral medicines reduces the risk of
+        transmission to some extent as well.\n\n
+        • <b>A child of a mother infected with HIV will always get HIV infection</b>\n\n
+        No, not always.In recent years, with the introduction of antiretroviral
+        medicines,the risk of transmission has lessened than before.As a matter of 
+        fact,a woman living with HIV has the same rights to be a mother as
+        anybody else as long as the pregnancy is planned.When a woman
+        takes antiretroviral medicines regularly,her viral load becomes very
+        low and she get prevent transmission if she has careful consultation with
+        the doctors during pregnancy and around childbirth.
+       
+    </string>
 
-    <string name="sti_description_details">STI description</string>
+    <string name="sti_description_details">
+        <b><u>STI description</u></b>\n
+        STI stands for Sexually Transmitted Infections.It is also called STDs
+        (Sexually Transmitted Diseases). In recent years,STI is the term more
+        commonly used than STDs.\n
+        STIs are the infections that are transmitted through vaginal,oral and
+        anal sex.
+    </string>
 
-    <string name="sti_syphillis_details">SYPHILLIS</string>
+    <string name="sti_syphillis_details">
+        <b><u>SYPHILLIS</u></b>\n
+        Syphilis is a bacterial infection,that can be transmitted through both
+        vaginal sex and oral sex.It can cause sores on the genitals and mouth.
+        In the early stage,it can be painless but can be painful later.It can be
+        diagnosed by blood test and treated by antibiotics(mainly penicillin
+        injection).If left untreated,the advanced stages can affect the heart,
+        brain and spinal cord.\n
+        The bast ways to prevent syphilis is to avoid multiple sexual partners
+        and use condom correctly and consistently.
+    </string>
 
-    <string name="sti_gonorrhea_details">GONORHEA</string>
+    <string name="sti_gonorrhea_details">
+        <b><u>GONORHEA</u></b>\n
+        Gonorrhea is a bacterial infection.Many women and men may remain
+        symptomless for sometime.In women,it can cause vaginal discharge and lower
+        abdominal pain.In men,it can cause burning sensation while urinating,
+        whitish or yellowish discharge from penis and pain in the testes.It 
+        can be treated with antibiotics.
+    </string>
 
-    <string name="sti_chlamydia_details">CHLAMYDIA</string>
+    <string name="sti_chlamydia_details">
+        <b><u>CHLAMYDIA</u></b>\n
+        It is a bacterial infection.In many people,it can be symptomless.In women,
+        chlamydia can cause burning sensation when urinating,vaginal discharge,
+        and pain in the lower abdomen. In men,it can cause pain or burning 
+        sensation when urinating,have white,cloudy or watery discharge from the
+        tip of the penis, and pain or tenderness in the testes.\n\n
+        It can be diagnosed from swab of the discharge or from the urine test.
+        It can be treated with antibiotics.If left untreated it can lead to
+        infertility.
+    </string>
 
-    <string name="sti_genital_warts_details">GENITAL WARTS</string>
+    <string name="sti_genital_warts_details">
+        <b><u>GENITAL WARTS</u></b>\n
+        It is caused by the virus called Human Papilloma virus. It causes growth
+        of skin tags commonly known as warts in the genitalia.The warts are usually
+        painless but can cause itching and sometimes bleeding.It can be transmitted
+        through skin-to-skin contact as well.\n
+        It can be treated by applying local antiviral creams.
+    </string>
 
-    <string name="sti_genital_herpes_details">GENITAL HERPES</string>
+    <string name="sti_genital_herpes_details">
+        <b><u>GENITAL HERPES</u></b>\n
+        It is caused by virus called Herpes simplex virus.It causes small painful
+        bisters in the genitalia.Once a person contracts this virus,it remains 
+        inactive and reappears again mostly when the person is sick or weak.\n
+        It is similar to blisters that appears on mouth which is not always caused
+        by sexual transmission. The blisters in the genitalia are mostly caused by
+        sexual transmission.Genital herpes is not entirely curable but disappears on 
+        its own.It can be treated by local antiviral cream as well as oral
+        antiviral medicines.
+    </string>
 
-    <string name="sti_trichomoniasis_details">TRICHOMONIASIS</string>
+    <string name="sti_trichomoniasis_details">
+        <b><u>TRICHOMONIASIS</u></b>\n
+        It is caused by a protozoa called trichomonas vaginalis.In women, it
+        is associated with severe vaginal itching,unpleasant smell and yellowish 
+        to greenish vaginal discharge.\n
+        In men,it doesnt usually cause burning sensation while urinating,
+        itching,redness and sore in the foreskin of the penis.It can be treated with
+        antibiotics.
+    </string>
 
-    <string name="sti_hepatitis_B_details">HEPATITIS B</string>
+    <string name="sti_hepatitis_B_details">
+        <b><u>HEPATITIS B</u></b>\n
+        Hepatitis B is a viral infection that can be transmitted either through
+        sexual contact,through blood or from infected pregnant mother to
+        her child. It can cause bothacute and chronic infection in the liver.\n\n
+        Acute form of infection that lasts for less than 6 months can resolve
+        spontaneously.People with acute Hepatitis B may not have symptoms in
+        the early stage but in severe stages may have vomiting,abdominal pain,
+        tiredness,dark urine and yellowish discoloration of skin and eyes.\n\n
+        Chronic infections can lead to scarring or cancer of liver leading to
+        liver failure.Children are more likely to have chronic infection.
+        Chronic infection can be diagnosed through specific blood tests.
+        In most people,chronic infection is not curable.Antiviral
+        medicines are available which can however slow down the 
+        multiplication of virus and progress of infection.\n\n
+        There are vaccines that can prevent Hepatitis B infection.
+    </string>
 
-    <string name="sti_myth_details">MYTHS ABOUT STIs</string>
+    <string name="sti_myth_details">
+        <b><u>MYTHS ABOUT STIs</u></b>\n
+        • <b>A person contracting STI is always someone with a bad character.</b>\n\n
+        No, we all have equal risk of getting STIs if we are not careful enough.
+        Contracting STI doesnt make someone good or bad.It is an infection not
+        a judge of character.\n\n
+        • <b>Toilet seats or sharing toilets can spread STI</b>\n\n
+        No, STI is a group of infections that are transmitted through oral,vaginal
+        or anal sex.\n\n
+        • <b>Oral sex doesnt transmit STI</b>\n\n
+        No,oral sex can transmit STI. It may not transmit all kinds of STIs,
+        but it certainly transmits many of them like gonorrhea,chlamydia,
+        syphilis,genital herpes.That is why it is always recommended to use
+        condom even for oral sex.\n\n
+        • <b>You can easily tell when your partner or you have STI</b>\n\n
+        No,STIs are difficult to diagnose bacause they are not always
+        symptomatic.You may live with the infection without treatment for
+        a long time.It is even more difficult to diagnose STI in men as they
+        are mostly symptomless.But being symptomless doesnt reduce the 
+        chance of spreading to other people through sexual contact.So when
+        in doubt, always go to the doctor for checkup and always use
+        condoms correctly and consistently.
+    </string>
 
     <!-- TODO: THIS IS THE END OF YOUR TASKS THNKS -->
 
