@@ -130,7 +130,8 @@
         <activity android:name=".hivAidsandStds.HivTreatable" />
         <activity android:name=".hivAidsandStds.StiStd" />
         <activity android:name=".hivAidsandStds.StiStdMyth" />
-        <activity android:name=".hivAidsandStds.StiStdTypes"></activity>
+        <activity android:name=".hivAidsandStds.StiStdTypes" />
+        <activity android:name=".user.EditUser"></activity>
     </application>
 
 </manifest>

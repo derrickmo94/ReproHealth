@@ -1,6 +1,9 @@
 package com.example.hericxon.reprohealth.user;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -24,8 +27,16 @@ import butterknife.ButterKnife;
 
 
     public class LoginActivity extends AppCompatActivity {
+        public static final String USER_PREFERENCE = "userPref";
+        public static final String USER_NAME = "userName";
+        public static final String USER_EMAIL = "userEmail";
+        public static final String USER_PHONE = "userPhone";
+        public static final String USER_PASS = "userPass";
+
+        SharedPreferences sharedPref;
+
         private static final String TAG = "LoginActivity";
-        private static final int REQUEST_SIGNUP = 0;
+        private static final int REQUEST_SIGNUP = 1;
         UserDb userdb;
 
         @BindView(R.id.input_email) EditText _emailText;
@@ -38,6 +49,8 @@ import butterknife.ButterKnife;
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_login);
             ButterKnife.bind(this);
+
+            sharedPref = getSharedPreferences(USER_PREFERENCE, Context.MODE_PRIVATE);
 
             _loginButton.setOnClickListener(new View.OnClickListener() {
 
@@ -93,28 +106,48 @@ import butterknife.ButterKnife;
 
                                 } else {
                                     onLoginSuccess();
+
+                                    String name =validuser.getString(1);
+                                    String email = validuser.getString(2);
+                                    String phone = validuser.getString(3);
+                                    String password = validuser.getString(4);
+
+                                    SharedPreferences.Editor editor = sharedPref.edit();
+
+                                    editor.putString(USER_NAME,name);
+                                    editor.putString(USER_EMAIL,email);
+                                    editor.putString(USER_PHONE,phone);
+                                    editor.putString(USER_PASS,password);
+                                    editor.commit();
+
                                     progressDialog.dismiss();
+
                                     Intent login = new Intent(LoginActivity.this, MainMenu.class);
                                     startActivity(login);
 
                                 }
                             }
-                        }, 3000);
+                        }, 3000
+                );
             }
         }
 
 
             @Override
             protected void onActivityResult (int requestCode, int resultCode, Intent data){
-                if (requestCode == REQUEST_SIGNUP) {
-                    if (resultCode == RESULT_OK) {
+                if (requestCode == REQUEST_SIGNUP && resultCode == RESULT_OK && data !=null) {
                         // TODO: Implement successful signup logic here
-                        // By default we just finish the Activity and log them in automatically
+                            // By default we just finish the Activity and log them in automatically
 
-                        this.finish();
+                    _passwordText.setText(data.getStringExtra("email"));
+                    _emailText.setText(data.getStringExtra("pass"));
+                    _loginButton.performClick();
+                     this.finish();
+
                     }
+
                 }
-            }
+
 
             @Override
             public void onBackPressed () {
