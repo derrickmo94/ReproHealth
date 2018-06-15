@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/padding_top58"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.familyPlanning.FamilyPlanningActivity"
+    tools:context="com.example.hericxon.reprohealth.familyplanning.FamilyPlanningActivity"
     tools:showIn="@layout/activity_family_planning">
 
 
@@ -30,21 +30,15 @@
             <Button
                 android:id="@+id/button_temporary"
                 style="@style/button_style"
-                android:text="@string/temporary_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/temporary_btn" />
             <Button
                 android:id="@+id/button_permanent"
                 style="@style/button_style"
-                android:text="@string/permanent_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/permanent_btn" />
             <Button
                 android:id="@+id/button_emergency"
                 style="@style/button_style"
-                android:text="@string/emergency_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/emergency_btn" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

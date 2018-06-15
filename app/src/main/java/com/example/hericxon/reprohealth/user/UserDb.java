@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
+import android.util.Log;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
@@ -14,7 +16,7 @@ import java.io.ByteArrayOutputStream;
  */
 
 public class UserDb  extends SQLiteOpenHelper {
-
+private static final String TAG ="USER DB CLASS";
     private final static int    DB_VERSION = 10;
     public static final String DATABASE_NAME = "myApp.db";
 
@@ -24,9 +26,9 @@ public class UserDb  extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String query = "create table logins (userId integer autoincrement," +
+        String query = "create table logins (userId integer auto increment," +
                 "username text not null, useremail text primary key not null, userphone text not null," +
-                "userpassword text primary key not null, photo blob)";
+                "userpassword text not null, photo blob)";
         database.execSQL(query);
     }
 
@@ -42,21 +44,44 @@ public class UserDb  extends SQLiteOpenHelper {
         }
     }
 
-    public long insertUser (String UserName, String UserEmail, String UserPhone, String UserPassword,Bitmap Photo){
-        SQLiteDatabase database = this.getWritableDatabase();
-        byte[] PhotoData = bitmapAsByteArray(Photo);
-        ContentValues values = new ContentValues();
-        values.put("username",UserName);
-        values.put("useremail", UserEmail);
-        values.put("userphone", UserPhone);
-        values.put("userpassword",UserPassword);
-        values.put("photo", (byte[]) null);
-        long resultid = database.insert("logins", null, values);
-        database.close();
-        return resultid;
+    public boolean userExists(String existingEmail){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor=null;
+        String query ="select useremail from logins where useremail ='"+existingEmail+"'";
+        cursor =database.rawQuery(query,null);
+        boolean exists;
+        if(cursor.getCount()>0){
+            exists =true;
+        }else {
+            exists = false;
+        }
+        return exists;
     }
 
-    public int updateLogins (String UserName, String UserEmail, String UserPhone, String UserPassword){
+    public long insertUser (String UserName, String UserEmail, String UserPhone, String UserPassword){
+        long resultid = 0;
+        try {
+            SQLiteDatabase database = this.getWritableDatabase();
+
+            // byte[] PhotoData = bitmapAsByteArray(Photo);
+            ContentValues values = new ContentValues();
+            values.put("username", UserName);
+            values.put("useremail", UserEmail);
+            values.put("userphone", UserPhone);
+            values.put("userpassword", UserPassword);
+            // values.put("photo", (byte[]) null);
+           resultid = database.insert("logins", null, values);
+            database.close();
+
+        }catch (Exception e){
+            Log.e(TAG,"Error of type: " +e.getMessage());
+        }finally {
+            return resultid;
+        }
+
+    }
+
+    public int updateLogins (String UserName, String UserEmail, String UserPhone, String UserPassword,String LoggedEmail){
         SQLiteDatabase database = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -65,17 +90,17 @@ public class UserDb  extends SQLiteOpenHelper {
         values.put("userphone", UserPhone);
         values.put("userpassword",UserPassword);
         //database.insert("logins", null, values);
-        int count = database.update("logins", values, "useremail = ?", new String[] {String.valueOf(UserEmail)});
+        int count = database.update("logins", values, "useremail = ?", new String[] {String.valueOf(LoggedEmail)});
         database.close();
         return count;
     }
 
-    public int updatePhoto(Bitmap Photo,String loggedinEmail){
+    public int updatePhoto(Bitmap Photo,String LoggedEmail){
         SQLiteDatabase database = this.getWritableDatabase();
         byte[] PhotoData = bitmapAsByteArray(Photo);
         ContentValues values = new ContentValues();
         values.put("photo",PhotoData);
-        int count = database.update("logins", values, "useremail = ?", new String[] {String.valueOf(loggedinEmail)});
+        int count = database.update("logins", values, "useremail = ?", new String[] {String.valueOf(LoggedEmail)});
         database.close();
         return count;
     }

@@ -6,7 +6,7 @@
     style="@style/linearlayout_style"
     android:paddingTop="@dimen/padding_top58"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.knowYoureBody.YourBodyActivity"
+    tools:context="com.example.hericxon.reprohealth.knowyourebody.YourBodyActivity"
     tools:showIn="@layout/activity_your_body">
 
 
@@ -28,16 +28,12 @@
         <Button
             android:id="@+id/sex_btn"
             style="@style/button_style"
-            android:drawableLeft="@mipmap/ic_male_round"
-            android:drawableStart="@mipmap/ic_male_round"
             android:text="@string/sex_vs_gender_btn" />
 
         <Button
             android:id="@+id/gender_btn"
             style="@style/button_style"
-            android:text="@string/gender_btn"
-            android:drawableLeft="@mipmap/ic_male_round"
-            android:drawableStart="@mipmap/ic_male_round" />
+            android:text="@string/gender_btn" />
         <TextView
             android:id="@+id/body_txt"
             android:layout_width="match_parent"
@@ -104,21 +100,15 @@
         <Button
             android:id="@+id/emotions_btn"
             style="@style/button_style"
-            android:text="@string/emtions_btn"
-            android:drawableLeft="@mipmap/ic_male_round"
-            android:drawableStart="@mipmap/ic_male_round" />
+            android:text="@string/emtions_btn" />
         <Button
             android:id="@+id/sex_and_sexuality_btn"
           style="@style/button_style"
-            android:text="@string/sex_btn"
-            android:drawableLeft="@mipmap/ic_male_round"
-            android:drawableStart="@mipmap/ic_male_round" />
+            android:text="@string/sex_btn" />
         <Button
             android:id="@+id/fertilty_and_pregnancy_btn"
            style="@style/button_style"
-            android:text="@string/fertilty_btn"
-            android:drawableLeft="@mipmap/ic_male_round"
-            android:drawableStart="@mipmap/ic_male_round" />
+            android:text="@string/fertilty_btn" />
         <!--test-->
 
     </LinearLayout>

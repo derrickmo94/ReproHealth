@@ -9,7 +9,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/repro_main_2"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -18,120 +18,226 @@
         <activity
             android:name=".home.MainMenu"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".user.UserActivity"
             android:label="@string/title_activity_user"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".knowYoureBody.YourBodyActivity"
+            android:name=".knowyourebody.YourBodyActivity"
             android:label="@string/title_activity_your_body"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Relationships.RelationshipActivity"
+            android:name=".relationships.RelationshipActivity"
             android:label="@string/title_activity_relationship"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".familyPlanning.FamilyPlanningActivity"
+            android:name=".familyplanning.FamilyPlanningActivity"
             android:label="@string/title_activity_family_planning"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".hivAidsandStds.HivAidsStdsActivity"
+            android:name=".hivaidsandstds.HivAidsStdsActivity"
             android:label="@string/title_activity_hiv_aids_stds"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".healthCenters.ReproductiveCentersActivity"
+            android:name=".healthcenters.ReproductiveCentersActivity"
             android:label="@string/title_activity_reproductive_centers"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MythsAndFactsActivity"
-            android:label="@string/title_activity_myths_and_facts"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".knowYoureBody.SexVsGender"
-            android:label="SEX Vs Gender"
+            android:name=".knowyourebody.SexVsGender"
+            android:label="Sex Vs Gender"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".knowYoureBody.GenderIdentity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.GenderIdentity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Gender Identity"/>
         <activity
-            android:name=".knowYoureBody.Male"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Male"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Male body"/>
         <activity
-            android:name=".knowYoureBody.MaleOrgans"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.MaleOrgans"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Male Organs"/>
         <activity
-            android:name=".knowYoureBody.Semens"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Semens"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Semens"/>
         <activity
-            android:name=".knowYoureBody.Sperms"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Sperms"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Sperms"/>
         <activity
-            android:name=".knowYoureBody.MaleHormones"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.MaleHormones"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Male Hormones"/>
         <activity
-            android:name=".knowYoureBody.Puberty"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Puberty"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Puberty in Males"/>
         <activity
-            android:name=".knowYoureBody.Female"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Female"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Female Body"/>
         <activity
-            android:name=".knowYoureBody.Emotions"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Emotions"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Emotions"/>
         <activity
-            android:name=".knowYoureBody.AdolescenceChalleges"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.AdolescenceChalleges"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Adolescence Challenges"/>
         <activity
-            android:name=".knowYoureBody.PsychologicalDevelopment"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.PsychologicalDevelopment"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Psychological Development"/>
         <activity
-            android:name=".knowYoureBody.Sexuality"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".knowyourebody.Sexuality"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Sexuality"/>
         <activity
-            android:name=".knowYoureBody.Fertility"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".knowYoureBody.FemalePuberty" />
-        <activity android:name=".knowYoureBody.FemaleOrgans" />
-        <activity android:name=".knowYoureBody.FemaleHormones" />
-        <activity android:name=".knowYoureBody.Ovulation" />
-        <activity android:name=".knowYoureBody.Menstruation" />
-        <activity android:name=".knowYoureBody.MenstruationConcerns" />
-        <activity android:name=".knowYoureBody.MenstruationHygiene" />
-        <activity android:name=".knowYoureBody.MenstruationMyths" />
-        <activity android:name=".Relationships.RelaionshipDetails" />
-        <activity android:name=".Relationships.RelationshipKey" />
-        <activity android:name=".Relationships.RelationshipParents" />
-        <activity android:name=".Relationships.RelationshipFriends" />
-        <activity android:name=".Relationships.RelationshipSpecial" />
-        <activity android:name=".Relationships.RelationshipSigns" />
-        <activity android:name=".familyPlanning.Temporarymethods" />
-        <activity android:name=".familyPlanning.Permanentmethods" />
-        <activity android:name=".familyPlanning.EmergencyMethods" />
-        <activity android:name=".user.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".knowyourebody.Fertility"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Fertilty in Females"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".user.SignupActivity" />
-        <activity android:name=".hivAidsandStds.HivMyth" />
-        <activity android:name=".hivAidsandStds.HivAids" />
-        <activity android:name=".hivAidsandStds.HivImmuneAttack" />
-        <activity android:name=".hivAidsandStds.HivManagement" />
-        <activity android:name=".hivAidsandStds.HivPrevention" />
-        <activity android:name=".hivAidsandStds.HivRisks" />
-        <activity android:name=".hivAidsandStds.HivSymptoms" />
-        <activity android:name=".hivAidsandStds.HivTransmission" />
-        <activity android:name=".hivAidsandStds.HivTreatable" />
-        <activity android:name=".hivAidsandStds.StiStd" />
-        <activity android:name=".hivAidsandStds.StiStdMyth" />
-        <activity android:name=".hivAidsandStds.StiStdTypes" />
-        <activity android:name=".user.EditUser"></activity>
+        <activity android:name=".knowyourebody.FemalePuberty"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Puberty in Females"/>
+
+        <activity android:name=".knowyourebody.FemaleOrgans"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Female Organs"/>
+
+        <activity android:name=".knowyourebody.FemaleHormones"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Female Hormones"/>
+
+        <activity android:name=".knowyourebody.Ovulation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Ovulation"/>
+
+        <activity android:name=".knowyourebody.Menstruation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Menstruation"/>
+
+        <activity android:name=".knowyourebody.MenstruationConcerns"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Menstruation Concerns"/>
+
+        <activity android:name=".knowyourebody.MenstruationHygiene"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Menstruation hygiene"/>
+
+        <activity android:name=".knowyourebody.MenstruationMyths"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="MenstruationMyths"/>
+
+        <activity android:name=".relationships.RelaionshipDetails"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Relationship"/>
+
+        <activity android:name=".relationships.RelationshipKey"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Relationship Keys"/>
+
+        <activity android:name=".relationships.RelationshipParents"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Parental Relationship"/>
+
+        <activity android:name=".relationships.RelationshipFriends"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Friendly relationship"/>
+
+        <activity android:name=".relationships.RelationshipSpecial"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Special Relationships"/>
+
+        <activity android:name=".relationships.RelationshipSigns"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Good Or bad relationship"/>
+
+        <activity android:name=".familyplanning.Temporarymethods"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Temporary methods"/>
+
+        <activity android:name=".familyplanning.Permanentmethods"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Permanent Methods"/>
+
+        <activity android:name=".familyplanning.EmergencyMethods"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Emergency Methods"/>
+
+        <activity android:name=".user.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".user.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".hivaidsandstds.HivMyth"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Myths"/>
+
+        <activity android:name=".hivaidsandstds.HivAids"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV/AIDS"/>
+
+        <activity android:name=".hivaidsandstds.HivImmuneAttack"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Attack Strategy"/>
+
+        <activity android:name=".hivaidsandstds.HivManagement"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Living With HIV"/>
+
+        <activity android:name=".hivaidsandstds.HivPrevention"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Prevention"/>
+
+        <activity android:name=".hivaidsandstds.HivRisks"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Risks"/>
+
+        <activity android:name=".hivaidsandstds.HivSymptoms"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Symptoms"/>
+
+        <activity android:name=".hivaidsandstds.HivTransmission"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Transmission"/>
+
+        <activity android:name=".hivaidsandstds.HivTreatable"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="HIV Treatment"/>
+
+        <activity android:name=".hivaidsandstds.StiStd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="STIs/STDs"/>
+
+        <activity android:name=".hivaidsandstds.StiStdMyth"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="STIs/STDs Myths"/>
+
+        <activity android:name=".hivaidsandstds.StiStdTypes"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Types Of STIs/STDs"/>
+
+        <activity android:name=".user.EditUser"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Edit Personal Info"/>
+
+        <activity android:name=".SearchActivity"/>
     </application>
 
 </manifest>

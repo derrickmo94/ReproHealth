@@ -1,15 +1,10 @@
 package com.example.hericxon.reprohealth.user;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.app.ProgressDialog;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import android.content.Intent;
@@ -20,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hericxon.reprohealth.R;
+import com.example.hericxon.reprohealth.SessionManager;
 import com.example.hericxon.reprohealth.home.MainMenu;
 
 import butterknife.BindView;
@@ -27,17 +23,11 @@ import butterknife.ButterKnife;
 
 
     public class LoginActivity extends AppCompatActivity {
-        public static final String USER_PREFERENCE = "userPref";
-        public static final String USER_NAME = "userName";
-        public static final String USER_EMAIL = "userEmail";
-        public static final String USER_PHONE = "userPhone";
-        public static final String USER_PASS = "userPass";
-
-        SharedPreferences sharedPref;
 
         private static final String TAG = "LoginActivity";
         private static final int REQUEST_SIGNUP = 1;
         UserDb userdb;
+        SessionManager logged_user;
 
         @BindView(R.id.input_email) EditText _emailText;
         @BindView(R.id.input_password) EditText _passwordText;
@@ -50,7 +40,7 @@ import butterknife.ButterKnife;
             setContentView(R.layout.activity_login);
             ButterKnife.bind(this);
 
-            sharedPref = getSharedPreferences(USER_PREFERENCE, Context.MODE_PRIVATE);
+            logged_user = new SessionManager(LoginActivity.this);
 
             _loginButton.setOnClickListener(new View.OnClickListener() {
 
@@ -72,6 +62,7 @@ import butterknife.ButterKnife;
                 }
             });
         }
+
 
         public void login() {
             Log.d(TAG, "Login");
@@ -106,24 +97,22 @@ import butterknife.ButterKnife;
 
                                 } else {
                                     onLoginSuccess();
+                                    if(validuser.moveToFirst()){
 
-                                    String name =validuser.getString(1);
-                                    String email = validuser.getString(2);
-                                    String phone = validuser.getString(3);
-                                    String password = validuser.getString(4);
+                                    }
+                                    String name =validuser.getString(validuser.getColumnIndex("username"));
+                                    String email = validuser.getString(validuser.getColumnIndex("useremail"));
+                                    String phone = validuser.getString(validuser.getColumnIndex("userphone"));
+                                    String password = validuser.getString(validuser.getColumnIndex("userpassword"));
 
-                                    SharedPreferences.Editor editor = sharedPref.edit();
-
-                                    editor.putString(USER_NAME,name);
-                                    editor.putString(USER_EMAIL,email);
-                                    editor.putString(USER_PHONE,phone);
-                                    editor.putString(USER_PASS,password);
-                                    editor.commit();
+                                    logged_user.slogin(name,email,phone,password);
 
                                     progressDialog.dismiss();
 
                                     Intent login = new Intent(LoginActivity.this, MainMenu.class);
+                                    login.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     startActivity(login);
+                                    overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
 
                                 }
                             }
@@ -143,9 +132,7 @@ import butterknife.ButterKnife;
                     _emailText.setText(data.getStringExtra("pass"));
                     _loginButton.performClick();
                      this.finish();
-
                     }
-
                 }
 
 

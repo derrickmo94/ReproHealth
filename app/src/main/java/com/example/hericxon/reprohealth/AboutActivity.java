@@ -12,12 +12,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.hericxon.reprohealth.Relationships.RelationshipActivity;
-import com.example.hericxon.reprohealth.familyPlanning.FamilyPlanningActivity;
-import com.example.hericxon.reprohealth.healthCenters.ReproductiveCentersActivity;
-import com.example.hericxon.reprohealth.hivAidsandStds.HivAidsStdsActivity;
+import com.example.hericxon.reprohealth.relationships.RelationshipActivity;
+import com.example.hericxon.reprohealth.familyplanning.FamilyPlanningActivity;
+import com.example.hericxon.reprohealth.healthcenters.ReproductiveCentersActivity;
+import com.example.hericxon.reprohealth.hivaidsandstds.HivAidsStdsActivity;
 import com.example.hericxon.reprohealth.home.MainMenu;
-import com.example.hericxon.reprohealth.knowYoureBody.YourBodyActivity;
+import com.example.hericxon.reprohealth.knowyourebody.YourBodyActivity;
 import com.example.hericxon.reprohealth.user.UserActivity;
 
 public class AboutActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,22 +25,37 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
     DrawerLayout drawer;
     NavigationView navigationView;
     Toolbar toolbar;
+    SessionManager logged_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         toolbar = findViewById(R.id.toolbar);
+        navigationView = findViewById(R.id.nav_view);
         setSupportActionBar(toolbar);
+
+        logged_user = new SessionManager(getApplicationContext());
+        logged_user.sgetNavData(navigationView);
 
         drawer = findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(this, drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
+
+   /* public void setUser() {
+
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        TextView navUsername = headerView.findViewById(R.id.validuser_name_id);
+        TextView navUseremail = headerView.findViewById(R.id.validuser_email_id);
+        logged_user.sgetNavData(navUsername, navUseremail);
+    }*/
+
 
     @Override
     public void onBackPressed() {
@@ -49,6 +64,7 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+            overridePendingTransition(R.anim.onbackpressed_incoming,R.anim.onbackpressed_outgoing);
         }
     }
 
@@ -67,7 +83,15 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_logout) {
+            logged_user.slogOut();
+            overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            return true;
+        }else if(id == R.id.action_search){
+            Intent search = new Intent(this, SearchActivity.class);
+            search.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(search);
+            overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
             return true;
         }
 
@@ -84,53 +108,52 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
         switch (id){
             case R.id.nav_home:
                 Intent home = new Intent(this,MainMenu.class);
+                home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(home);
-                finish();
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_profile:
                 Intent profile =new Intent(this,UserActivity.class);
                 profile.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                this.startActivity(profile);
+                startActivity(profile);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 finish();
                 break;
             case R.id.nav_body:
                 Intent body = new Intent(this,YourBodyActivity.class);
                 body.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(body);
-                finish();
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_relationship:
                 Intent relationship = new Intent(this,RelationshipActivity.class);
                 relationship.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(relationship);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_familyplanning:
                 Intent familypanning = new Intent(this,FamilyPlanningActivity.class);
                 familypanning.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(familypanning);
-                finish();
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_HIV_STDs:
                 Intent diseases = new Intent(this,HivAidsStdsActivity.class);
                 diseases.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(diseases);
-                finish();
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_reproductive_health:
                 Intent centers = new Intent(this,ReproductiveCentersActivity.class);
                 centers.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(centers);
-                finish();
-                break;
-            case R.id.nav_myths:
-                Intent stories =new Intent(this,MythsAndFactsActivity.class);
-                stories.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(stories);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_about:
                 Intent about = new Intent(this,AboutActivity.class);
                 about.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(about);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
         }
 

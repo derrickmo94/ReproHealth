@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Relationships.RelationshipActivity">
+    tools:context=".relationships.RelationshipActivity">
 
     <include layout="@layout/app_bar_main_menu"
         android:layout_height="57dp"

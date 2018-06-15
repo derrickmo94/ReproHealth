@@ -3,14 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
    android:shape="rectangle">
     <solid
-        android:color="@color/colorPrimary"/>
+        android:color="@color/colorPrimary" />
     <corners
-        android:radius="@dimen/dim4"/>
+        android:radius="@dimen/dim4" />
     <gradient
-        android:angle="90"
-        android:startColor="@color/colorPrimary"
-        android:centerColor="@color/colordarkbr"
-        android:endColor="@color/colorPrimaryDark2"
-        android:type="linear"/>
-
+        android:angle="45"
+        android:startColor="#f7b056"
+        android:centerColor="#f9cea8"
+        android:endColor="#ffffff"
+        android:type="linear"
+        android:useLevel="true"/>
+    <stroke
+        android:color="#f29f64"
+        android:width="1dp" />
+    <padding
+        android:left="15dp"/>
 </shape>

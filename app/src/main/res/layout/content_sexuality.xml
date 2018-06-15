@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/dim60"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.knowYoureBody.Sexuality"
+    tools:context="com.example.hericxon.reprohealth.knowyourebody.Sexuality"
     tools:showIn="@layout/activity_sexuality">
 
     <android.support.v4.widget.NestedScrollView
@@ -25,7 +25,7 @@
             android:layout_marginTop="-6dp">
             <ImageView
                 style="@style/imageview_style"
-                android:contentDescription="@string/imageview"/>
+                android:contentDescription="@string/imageview" />
 
             <TextView
                 android:id="@+id/textView_what_sex"

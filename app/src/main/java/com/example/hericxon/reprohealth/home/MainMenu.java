@@ -11,39 +11,115 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
-import com.example.hericxon.reprohealth.MythsAndFactsActivity;
 import com.example.hericxon.reprohealth.R;
-import com.example.hericxon.reprohealth.familyPlanning.FamilyPlanningActivity;
-import com.example.hericxon.reprohealth.hivAidsandStds.HivAidsStdsActivity;
-import com.example.hericxon.reprohealth.knowYoureBody.YourBodyActivity;
+import com.example.hericxon.reprohealth.SearchActivity;
+import com.example.hericxon.reprohealth.SessionManager;
+import com.example.hericxon.reprohealth.familyplanning.FamilyPlanningActivity;
+import com.example.hericxon.reprohealth.hivaidsandstds.HivAidsStdsActivity;
+import com.example.hericxon.reprohealth.knowyourebody.YourBodyActivity;
 import com.example.hericxon.reprohealth.AboutActivity;
-import com.example.hericxon.reprohealth.Relationships.RelationshipActivity;
-import com.example.hericxon.reprohealth.healthCenters.ReproductiveCentersActivity;
+import com.example.hericxon.reprohealth.relationships.RelationshipActivity;
+import com.example.hericxon.reprohealth.healthcenters.ReproductiveCentersActivity;
 import com.example.hericxon.reprohealth.user.UserActivity;
 
 public class MainMenu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    /*public static final String USER_PREFERENCE = "userPref";
+    public static final String USER_NAME = "userName";
+    public static final String USER_EMAIL = "userEmail";*/
+
     DrawerLayout drawer;
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
+    TextView navUsername,navUseremail;
+    ImageButton ihiv,irelationship,icontraceptives,iyourself,ihealthcenter;
+
+   SessionManager logged_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        toolbar=findViewById(R.id.toolbar);
+
+        toolbar = findViewById(R.id.toolbar);
+        navigationView = findViewById(R.id.nav_view);
+        drawer = findViewById(R.id.drawer_layout);
+        ihiv = findViewById(R.id.ImageButton_hiv);
+        irelationship = findViewById(R.id.ImageButton_relationship);
+        icontraceptives = findViewById(R.id.ImageButton_contraceptives);
+        iyourself = findViewById(R.id.ImageButton_yourself);
+        ihealthcenter = findViewById(R.id.ImgeButton_health_center);
         setSupportActionBar(toolbar);
 
-       drawer = findViewById(R.id.drawer_layout);
-       toggle = new ActionBarDrawerToggle(this, drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        logged_user = new SessionManager(getApplicationContext());
+        logged_user.scheckLogin();
+        logged_user.sgetNavData(navigationView);
+
+        toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-      //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-       navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Main screen image click event handlers
+        ihiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_hivaids = new Intent(MainMenu.this,HivAidsStdsActivity.class);
+                i_hivaids.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i_hivaids);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            }
+        });
+
+        iyourself.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_yourself= new Intent(MainMenu.this,YourBodyActivity.class);
+                i_yourself.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i_yourself);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            }
+        });
+
+        icontraceptives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_contaceptives = new Intent(MainMenu.this,FamilyPlanningActivity.class);
+                i_contaceptives.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i_contaceptives);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            }
+        });
+
+        irelationship.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_relatioship = new Intent(MainMenu.this,RelationshipActivity.class);
+                i_relatioship.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i_relatioship);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            }
+        });
+
+        ihealthcenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_health = new Intent(MainMenu.this,ReproductiveCentersActivity.class);
+                i_health.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i_health);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            }
+        });
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -70,10 +146,18 @@ public class MainMenu extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_logout) {
+            SessionManager logged_user = new SessionManager(getApplicationContext());
+            logged_user.slogOut();
+            overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
+            return true;
+        }else if(id == R.id.action_search){
+            Intent search = new Intent(this, SearchActivity.class);
+            search.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(search);
+            overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
             return true;
         }
-
         return toggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
@@ -89,46 +173,49 @@ public class MainMenu extends AppCompatActivity implements NavigationView.OnNavi
                 Intent home = new Intent(this,MainMenu.class);
                 home.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(home);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_profile:
                 Intent profile =new Intent(this,UserActivity.class);
                 profile.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(profile);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_body:
                 Intent body = new Intent(this,YourBodyActivity.class);
                 body.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(body);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_relationship:
                 Intent relationship = new Intent(this,RelationshipActivity.class);
                 relationship.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(relationship);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_familyplanning:
                 Intent familypanning = new Intent(this,FamilyPlanningActivity.class);
                 familypanning.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(familypanning);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_HIV_STDs:
                 Intent diseases = new Intent(this,HivAidsStdsActivity.class);
                 diseases.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(diseases);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_reproductive_health:
                 Intent centers = new Intent(this,ReproductiveCentersActivity.class);
                 centers.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(centers);
-                break;
-            case R.id.nav_myths:
-                Intent stories =new Intent(this,MythsAndFactsActivity.class);
-                stories.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(stories);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
             case R.id.nav_about:
                 Intent about = new Intent(this,AboutActivity.class);
                 about.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(about);
+                overridePendingTransition(R.anim.incomimg_activity,R.anim.outgoing_activity);
                 break;
         }
 

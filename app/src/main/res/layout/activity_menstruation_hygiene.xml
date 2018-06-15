@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".knowYoureBody.MenstruationHygiene">
+    tools:context=".knowyourebody.MenstruationHygiene">
 
     <include layout="@layout/app_bar_main_menu"/>
     <include layout="@layout/content_menstruation_hygiene"/>

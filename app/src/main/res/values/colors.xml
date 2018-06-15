@@ -13,6 +13,8 @@
     <color name="colorAppBackground">#e6e4d8</color>
     <color name="colorText2">#0004ff</color>
 
+    <color name="hme_buttons">#76074f</color>
+
     //firebase colors
 
     <color name="grey_100">#F5F5F5</color>

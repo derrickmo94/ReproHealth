@@ -6,7 +6,7 @@
    style="@style/linearlayout_style"
     android:paddingTop="@dimen/padding_top58"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.knowYoureBody.Male"
+    tools:context="com.example.hericxon.reprohealth.knowyourebody.Male"
     tools:showIn="@layout/activity_male">
 
 
@@ -24,39 +24,28 @@
 
             <ImageView
                 android:id="@+id/imageView_gender_vs_sex"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/nav_header_height"
+                style="@style/imageview_style"
                 android:contentDescription="@string/imageview" />
             <Button
                 android:id="@+id/puberty_btn"
                 style="@style/button_style"
-                android:text="@string/puberty_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/puberty_btn" />
             <Button
                 android:id="@+id/male_organs_btn"
                 style="@style/button_style"
-                android:text="@string/male_organs_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/male_organs_btn" />
             <Button
                 android:id="@+id/sperms_btn"
                 style="@style/button_style"
-                android:text="@string/sperms_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/sperms_btn" />
             <Button
                 android:id="@+id/semens_btn"
                 style="@style/button_style"
-                android:text="@string/semen_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/semen_btn" />
             <Button
                 android:id="@+id/male_hormones_btn"
                 style="@style/button_style"
-                android:text="@string/male_hormones_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/male_hormones_btn" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

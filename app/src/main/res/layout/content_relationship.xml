@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/padding_top58"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.Relationships.RelationshipActivity"
+    tools:context="com.example.hericxon.reprohealth.relationships.RelationshipActivity"
     tools:showIn="@layout/activity_relationship">
 
     <android.support.v4.widget.NestedScrollView
@@ -29,39 +29,27 @@
             <Button
                 android:id="@+id/button_details"
                 style="@style/button_style"
-                android:text="@string/details_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/details_btn" />
             <Button
                 android:id="@+id/button_keys"
                 style="@style/button_style"
-                android:text="@string/key_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/key_btn" />
             <Button
                 android:id="@+id/button_parents"
                 style="@style/button_style"
-                android:text="@string/parents_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/parents_btn" />
             <Button
                 android:id="@+id/button_friends"
                 style="@style/button_style"
-                android:text="@string/friend_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/friend_btn" />
             <Button
                 android:id="@+id/button_special"
                 style="@style/button_style"
-                android:text="@string/special_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/special_btn" />
             <Button
                 android:id="@+id/button_signs"
                 style="@style/button_style"
-                android:text="@string/signs_btn"
-                android:drawableLeft="@mipmap/ic_male_round"
-                android:drawableStart="@mipmap/ic_male_round" />
+                android:text="@string/signs_btn" />
 
 
         </LinearLayout>

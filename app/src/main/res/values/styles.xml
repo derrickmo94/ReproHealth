@@ -31,16 +31,17 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:paddingLeft">@dimen/dim8</item>
-        <item name="android:paddingRight">@dimen/dim8</item>
-        <item name="android:paddingBottom">@dimen/dim8</item>
+        <item name="android:paddingLeft">@dimen/dim4</item>
+        <item name="android:paddingRight">@dimen/dim4</item>
+        <item name="android:paddingBottom">@dimen/dim4</item>
     </style>
 
     <style name="button_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dim75</item>
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:textColor">#735234</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">@dimen/dim8</item>
         <item name="android:textSize">12sp</item>
     </style>
@@ -48,6 +49,8 @@
     <style name="imageview_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/nav_header_height</item>
+        <item name="android:src">@drawable/repro_main_2</item>
+        <item name="android:background">#43dae2</item>
     </style>
 
 
@@ -71,6 +74,10 @@
         <item name="colorAccent">@color/white</item>
         <item name="android:textColorPrimary">@color/iron</item>
         <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="home_screen">
+        <item name="  android:backgroundTint">#76074f</item>
     </style>
 
 

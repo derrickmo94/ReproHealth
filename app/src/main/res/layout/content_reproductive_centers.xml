@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="@dimen/padding_top58"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.healthCenters.ReproductiveCentersActivity"
+    tools:context="com.example.hericxon.reprohealth.healthcenters.ReproductiveCentersActivity"
     tools:showIn="@layout/activity_reproductive_centers">
 
     <android.support.v4.widget.NestedScrollView
@@ -18,11 +19,36 @@
         android:visibility="visible"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
+        <LinearLayout
+           style="@style/linearlayout_style">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/centers" />
+            <ImageButton
+                style="@style/imageview_style"
+                android:contentDescription="@string/imageview" />
+
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+            <Button
+                style="@style/button_style"/>
+
+        </LinearLayout>
+
     </android.support.v4.widget.NestedScrollView>
 
-</RelativeLayout>
+</LinearLayout>

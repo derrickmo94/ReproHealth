@@ -3,8 +3,9 @@
 
     <style name="button_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/dim100</item>
+        <item name="android:layout_height">@dimen/dim75</item>
         <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginTop">@dimen/dim8</item>
         <item name="android:background">@drawable/button_shape</item>
     </style>
 </resources>

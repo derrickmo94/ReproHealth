@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/dim60"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hericxon.reprohealth.knowYoureBody.SexVsGender"
+    tools:context="com.example.hericxon.reprohealth.knowyourebody.SexVsGender"
     tools:showIn="@layout/activity_sex_and_gender">
 
     <android.support.v4.widget.NestedScrollView

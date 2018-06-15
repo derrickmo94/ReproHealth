@@ -1,63 +1,53 @@
 package com.example.hericxon.reprohealth.user;
 
-import android.database.sqlite.SQLiteDatabase;
+import android.database.DatabaseUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.hericxon.reprohealth.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class SignupActivity extends AppCompatActivity {
+
     private static final String TAG = "SignupActivity";
-
     UserDb userdb;
-    //SQLiteDatabase df;
     Button signupButton;
-    EditText nameText,addressText,emailText,passwordText,mobileText,reEnterPasswordText;
+    EditText nameText,emailText,passwordText,mobileText,reEnterPasswordText;
     TextView loginLink;
-
-    /*@BindView(R.id.input_name)
-    @BindView(R.id.input_address)
-    @BindView(R.id.input_email)
-    @BindView(R.id.input_mobile)
-    @BindView(R.id.input_password)
-    @BindView(R.id.input_reEnterPassword)
-    @BindView(R.id.email_sign_in_button) Button signupButton;
-    @BindView(R.id.link_login) */
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        ButterKnife.bind(this);
 
        signupButton = findViewById(R.id.email_sign_in_button);
        nameText = findViewById(R.id.input_name);
-       addressText = findViewById(R.id.input_address);
        emailText = findViewById(R.id.input_email);
        mobileText = findViewById(R.id.input_mobile);
        passwordText = findViewById(R.id.input_password);
        reEnterPasswordText = findViewById(R.id.input_reEnterPassword);
        loginLink = findViewById(R.id.link_login);
+        userdb = new UserDb(this);
 
 
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
-                signup();
+                String email = emailText.getText().toString().trim();
+
+                if ((userdb.userExists(email)) == true) {
+                    onExisting(email);
+                } else {
+                    signup();
+                }
             }
         });
 
@@ -68,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
                 startActivity(intent);
                 finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+                overridePendingTransition(R.anim.onbackpressed_incoming,R.anim.onbackpressed_outgoing);
             }
         });
     }
@@ -81,7 +71,8 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        signupButton.setEnabled(false);
+        signupButton.setEnabled(true);
+
 
         final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
                 R.style.AppTheme_Dark_Dialog);
@@ -93,58 +84,55 @@ public class SignupActivity extends AppCompatActivity {
         final String email = emailText.getText().toString().trim();
         final String mobile = mobileText.getText().toString().trim();
         final String password = passwordText.getText().toString().trim();
-        //String reEnterPassword = reEnterPasswordText.getText().toString();
 
         // TODO: Implement your own signup logic here.
         userdb = new UserDb(this);
-       final long results = userdb.insertUser(name,email,mobile,password,null);
-
+        final long results = userdb.insertUser(name, email, mobile, password);
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
+
                     public void run() {
                         // On complete call either onSignupSuccess or onSignupFailed
+                        //userdb.getUser()
+                        //if(email == )
                         if(results > -1){
-
                             onSignupSuccess(email,password);
                             progressDialog.dismiss();
-
 
                         }else{
                             onSignupFailed();
                             progressDialog.dismiss();
                         }
-
                     }
                 }, 3000);
     }
 
 
     public void onSignupSuccess(String email,String password) {
+
         signupButton.setEnabled(true);
         Toast.makeText(this,"Successfully signed up",Toast.LENGTH_SHORT).show();
 
         Intent login = new Intent();
         login.putExtra("email",email);
         login.putExtra("pass",password);
-        setResult(RESULT_OK, null);
-        finish();
-    }
-    public void onSignupsccess2(){
-        Toast.makeText(this,"Sucessfully signed up",Toast.LENGTH_SHORT).show();
+        setResult(RESULT_OK, login);
     }
 
     public void onSignupFailed() {
-        Toast.makeText(getBaseContext(), "Registration failed", Toast.LENGTH_LONG).show();
 
+        Toast.makeText(getBaseContext(), "Registration failed", Toast.LENGTH_LONG).show();
         signupButton.setEnabled(true);
+    }
+    public  void onExisting(String email){
+        Toast.makeText(this,"A user with email "+email+" already exists",Toast.LENGTH_LONG).show();
     }
 
     public boolean validate() {
-        boolean valid = true;
 
+        boolean valid = true;
         String name =nameText.getText().toString();
-        String address =addressText.getText().toString();
         String email =emailText.getText().toString();
         String mobile =mobileText.getText().toString();
         String password =passwordText.getText().toString();
@@ -156,14 +144,6 @@ public class SignupActivity extends AppCompatActivity {
         } else {
            nameText.setError(null);
         }
-
-        if (address.isEmpty()) {
-           addressText.setError("Enter Valid Address");
-            valid = false;
-        } else {
-           addressText.setError(null);
-        }
-
 
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
            emailText.setError("enter a valid email address");
