@@ -27,25 +27,77 @@
                 android:contentDescription="@string/imageview" />
 
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center1"
+                style="@style/button_style"
+                android:text="Reproductive Health Uganda - katego Rd, kampala"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center2"
+                style="@style/button_style"
+                android:text="Women's Hospital International, Bukoto,Kampala"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center3"
+                style="@style/button_style"
+                android:text="Mariestopes Clinic, Kampala"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center7"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Arua"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center8"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Gulu"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center9"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda -Lira"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center10"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda -Apac "/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center11"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Kapchorwa"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center12"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Mbale"/>
             <Button
-                style="@style/button_style"/>
+                android:id="@+id/btn_center13"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Tororo"/>
+            <Button
+                android:id="@+id/btn_center14"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Iganga"/>
+            <Button
+                android:id="@+id/btn_center15"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Mityana"/>
+            <Button
+                android:id="@+id/btn_center16"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Bwaise"/>
+            <Button
+                android:id="@+id/btn_center17"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Hoima "/>
+            <Button
+                android:id="@+id/btn_center18"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Fort Portal"/>
+            <Button
+                android:id="@+id/btn_center19"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Bushenyi"/>
+            <Button
+                android:id="@+id/btn_center20"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Mbarara"/>
+            <Button
+                android:id="@+id/btn_center21"
+                style="@style/button_style"
+                android:text="Reproductive Heath Uganda - Kabale"/>
 
         </LinearLayout>
 
